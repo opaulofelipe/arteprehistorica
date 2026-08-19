@@ -1,0 +1,634 @@
+{
+  "version": "2026.08",
+  "updatedAt": "2026-08-19",
+  "title": "Quiz — Arte Pré-Histórica",
+  "questions": [
+    {
+      "id": "africa-blombos",
+      "continent": "África",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Blombo.jpg?width=1600",
+        "altAfterAnswer": "Fragmento de ocre avermelhado com linhas geométricas cruzadas gravadas na superfície.",
+        "credit": "Chris S. Henshilwood / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Blombo.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "answer": "Placa de ocre de Blombos",
+      "choices": [
+        "Placa de ocre de Blombos",
+        "Cascas de ovo gravadas de Diepkloof",
+        "Plaqueta da Caverna Apollo 11",
+        "Grande Deus de Sefar"
+      ],
+      "date": "c. 77.000–75.000 anos atrás",
+      "place": "Caverna de Blombos, Cabo Ocidental",
+      "country": "África do Sul",
+      "explanation": "Este fragmento de ocre traz um padrão geométrico intencional gravado por Homo sapiens. Encontrado em Blombos, ele mostra que a produção de sinais abstratos já fazia parte do comportamento humano há cerca de 75 mil anos.",
+      "sourceUrl": "https://humanorigins.si.edu/evidence/behavior/recording-information/blombos-ocher-plaque",
+      "sourceLabel": "Smithsonian Human Origins"
+    },
+    {
+      "id": "africa-diepkloof",
+      "continent": "África",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Iziko%20engraving%20ostrich%20eggshell.JPG?width=1600",
+        "altAfterAnswer": "Fragmentos de casca de ovo de avestruz decorados com faixas e linhas geométricas incisas.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Iziko_engraving_ostrich_eggshell.JPG",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Cascas de ovo gravadas de Diepkloof",
+      "choices": [
+        "Cascas de ovo gravadas de Diepkloof",
+        "Placa de ocre de Blombos",
+        "Cerâmica de Nok",
+        "Pedras pintadas de Mas d’Azil"
+      ],
+      "date": "c. 60.000 anos atrás",
+      "place": "Abrigo rochoso de Diepkloof, Cabo Ocidental",
+      "country": "África do Sul",
+      "explanation": "Os fragmentos pertenciam a recipientes feitos com ovos de avestruz. Seus motivos geométricos repetidos sugerem uma tradição visual compartilhada, e não simples riscos ocasionais.",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2851956/",
+      "sourceLabel": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "id": "africa-sefar",
+      "continent": "África",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20god%20of%20Sefar.jpg?width=1600",
+        "altAfterAnswer": "Grande figura antropomórfica pintada em abrigo rochoso, com cabeça arredondada e braços erguidos.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Great_god_of_Sefar.jpg",
+        "license": "Domínio público"
+      },
+      "answer": "Grande Deus de Sefar",
+      "choices": [
+        "Grande Deus de Sefar",
+        "Dama Branca de Brandberg",
+        "Bovino cerimonial de Laas Geel",
+        "Figura de Gwion Gwion"
+      ],
+      "date": "c. 8.000–6.000 a.C. (estimativa)",
+      "place": "Sefar, Tassili n’Ajjer",
+      "country": "Argélia",
+      "explanation": "A figura integra a chamada fase das Cabeças Redondas de Tassili n’Ajjer. A cronologia exata é debatida, mas a imagem testemunha a vida simbólica de populações que ocuparam o Saara quando a região era muito mais úmida.",
+      "sourceUrl": "https://whc.unesco.org/en/list/179/",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "africa-dabous",
+      "continent": "África",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giraffen%20von%20Dabous.jpg?width=1600",
+        "altAfterAnswer": "Duas grandes girafas gravadas em uma superfície rochosa vista de cima.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Giraffen_von_Dabous.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "answer": "Girafas de Dabous",
+      "choices": [
+        "Girafas de Dabous",
+        "Leão de Twyfelfontein",
+        "Elefantes de Tadrart Acacus",
+        "Rinocerontes de Tsodilo"
+      ],
+      "date": "c. 6.000–4.000 a.C.",
+      "place": "Dabous, maciço de Aïr",
+      "country": "Níger",
+      "explanation": "Com vários metros de altura, as duas girafas foram cuidadosamente polidas e gravadas no arenito. Elas pertencem ao período em que o atual Saara abrigava savanas, fauna abundante e comunidades humanas.",
+      "sourceUrl": "https://myvisit-uat.britishmuseum.org/country/niger/dabous/",
+      "sourceLabel": "British Museum"
+    },
+    {
+      "id": "africa-twyfelfontein",
+      "continent": "África",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion%20Twyfelfontein%20Namibia.JPG?width=1600",
+        "altAfterAnswer": "Gravura rupestre de um felino de cauda longa, com marcas nas patas, sobre rocha alaranjada.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Lion_Twyfelfontein_Namibia.JPG",
+        "license": "CC BY-SA 3.0"
+      },
+      "answer": "Leão de Twyfelfontein",
+      "choices": [
+        "Leão de Twyfelfontein",
+        "Girafas de Dabous",
+        "Felino de Qurta",
+        "Leão-homem de Hohlenstein-Stadel"
+      ],
+      "date": "c. 4.000–1.000 a.C.",
+      "place": "Twyfelfontein, região de Kunene",
+      "country": "Namíbia",
+      "explanation": "Este felino faz parte de um vasto conjunto de petróglifos criado por caçadores-coletores. As pegadas e sinais associados aos animais revelam observação minuciosa e possíveis significados rituais.",
+      "sourceUrl": "https://whc.unesco.org/en/list/1255/",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "america-cueva-manos",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SantaCruz-CuevaManos-P2210651b.jpg?width=1600",
+        "altAfterAnswer": "Parede rochosa coberta por estênceis de mãos em tons vermelhos, ocres, brancos e pretos.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:SantaCruz-CuevaManos-P2210651b.jpg",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Cueva de las Manos",
+      "choices": [
+        "Cueva de las Manos",
+        "Caverna de Toquepala",
+        "Painel das Mãos de El Castillo",
+        "Gruta de Loltún"
+      ],
+      "date": "c. 11.000–7.500 a.C. (fase mais antiga)",
+      "place": "Cânion do rio Pinturas, Santa Cruz",
+      "country": "Argentina",
+      "explanation": "A maioria das silhuetas foi feita soprando pigmento ao redor da mão apoiada na rocha. O sítio reúne várias fases de pintura e preserva um registro excepcional de caçadores-coletores da Patagônia.",
+      "sourceUrl": "https://whc.unesco.org/en/list/936/",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "america-sierra-san-francisco",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pintura%20rupestre%20de%20Baja%20California.jpg?width=1600",
+        "altAfterAnswer": "Abrigo rochoso com grandes figuras humanas e animais pintadas em vermelho e preto.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Pintura_rupestre_de_Baja_California.jpg",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Grandes Murais da Sierra de San Francisco",
+      "choices": [
+        "Grandes Murais da Sierra de San Francisco",
+        "Mural do White Shaman",
+        "Painel da Serra da Capivara",
+        "Great Gallery de Horseshoe Canyon"
+      ],
+      "date": "c. 100 a.C.–1300 d.C.",
+      "place": "Sierra de San Francisco, Baja California Sur",
+      "country": "México",
+      "explanation": "Os chamados Grandes Murais mostram figuras humanas monumentais e animais, muitas vezes em vermelho e preto. Foram pintados por grupos indígenas que viveram na península antes da colonização europeia.",
+      "sourceUrl": "https://whc.unesco.org/en/list/714/",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "america-serra-capivara",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serra%20da%20Capivara%20-%20Painting%207.JPG?width=1600",
+        "altAfterAnswer": "Pintura rupestre vermelha com figuras humanas e animais em movimento sobre parede clara.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Serra_da_Capivara_-_Painting_7.JPG",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Painel da Serra da Capivara",
+      "choices": [
+        "Painel da Serra da Capivara",
+        "Cueva de las Manos",
+        "Pedra Pintada de Monte Alegre",
+        "Grandes Murais da Sierra de San Francisco"
+      ],
+      "date": "pelo menos c. 8.500 a.C. no conjunto datado",
+      "place": "Parque Nacional da Serra da Capivara, Piauí",
+      "country": "Brasil",
+      "explanation": "A Serra da Capivara reúne centenas de abrigos com cenas de animais, caçadas, danças e encontros humanos. A cronologia mais antiga do conjunto é discutida, mas há arte rupestre datada em mais de 10.500 anos.",
+      "sourceUrl": "https://whc.unesco.org/en/list/606/",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "america-great-gallery",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/GreatGalleryedit.jpg?width=1600",
+        "altAfterAnswer": "Painel de cânion com figuras antropomórficas altas e estilizadas em tons vermelhos e ocres.",
+        "credit": "Wikimedia Commons / National Park Service",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:GreatGalleryedit.jpg",
+        "license": "Domínio público nos Estados Unidos"
+      },
+      "answer": "Great Gallery de Horseshoe Canyon",
+      "choices": [
+        "Great Gallery de Horseshoe Canyon",
+        "Grandes Murais da Sierra de San Francisco",
+        "Painel do Barrier Canyon em Sego",
+        "Pictografias do Lower Pecos"
+      ],
+      "date": "c. 2.000 a.C.–500 d.C.",
+      "place": "Horseshoe Canyon, Utah",
+      "country": "Estados Unidos",
+      "explanation": "A Great Gallery é uma obra-chave do estilo Barrier Canyon. Suas figuras alongadas, algumas sem braços ou pernas visíveis, formam uma composição enigmática criada por povos caçadores-coletores do Arcaico Tardio.",
+      "sourceUrl": "https://www.nps.gov/places/horseshoe-canyon.htm",
+      "sourceLabel": "U.S. National Park Service"
+    },
+    {
+      "id": "america-tlatilco",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/313186/672272/main-image",
+        "altAfterAnswer": "Pequena figura feminina de cerâmica com cintura estreita, quadris largos e pintura corporal.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/313186",
+        "license": "Domínio público — Met Open Access"
+      },
+      "answer": "Figura feminina de Tlatilco",
+      "choices": [
+        "Figura feminina de Tlatilco",
+        "Figura feminina Valdivia",
+        "Vênus de Willendorf",
+        "Estatueta de Jaina"
+      ],
+      "date": "século X a.C.",
+      "place": "Tlatilco, Vale do México",
+      "country": "México",
+      "explanation": "Modelada à mão em cerâmica, esta figura apresenta penteado elaborado, pintura corporal e proporções acentuadas. Objetos semelhantes foram encontrados em sepultamentos de Tlatilco, importante aldeia do período Pré-Clássico.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/313186",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "asia-liang-metanduno",
+      "continent": "Ásia",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-025-09968-y/MediaObjects/41586_2025_9968_Fig2_HTML.png",
+        "altAfterAnswer": "Figura científica que localiza e destaca um estêncil de mão muito desbotado em parede de caverna.",
+        "credit": "Oktaviana et al. / Nature (2026)",
+        "creditUrl": "https://www.nature.com/articles/s41586-025-09968-y",
+        "license": "Artigo de acesso aberto — ver licença na fonte",
+        "note": "A imagem científica realça um motivo hoje muito desbotado."
+      },
+      "answer": "Molde de mão de Liang Metanduno",
+      "choices": [
+        "Molde de mão de Liang Metanduno",
+        "Mão negativa de Cueva de las Manos",
+        "Mão de Maltravieso",
+        "Mão de Gua Tewet"
+      ],
+      "date": "pelo menos 67.800 anos atrás",
+      "place": "Caverna Liang Metanduno, ilha de Muna",
+      "country": "Indonésia",
+      "explanation": "Crostas de calcita formadas sobre o pigmento forneceram uma idade mínima de 67.800 anos. É uma das imagens rupestres datadas mais antigas conhecidas; os autores a associam a Homo sapiens, embora a autoria não possa ser demonstrada diretamente.",
+      "sourceUrl": "https://www.nature.com/articles/s41586-025-09968-y",
+      "sourceLabel": "Nature (2026)"
+    },
+    {
+      "id": "asia-leang-karampuang",
+      "continent": "Ásia",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-024-07541-7/MediaObjects/41586_2024_7541_Fig3_HTML.png",
+        "altAfterAnswer": "Figura científica com fotografia e traçado de um porco cercado por três figuras semelhantes a humanos.",
+        "credit": "Oktaviana et al. / Nature (2024)",
+        "creditUrl": "https://www.nature.com/articles/s41586-024-07541-7",
+        "license": "CC BY 4.0",
+        "note": "A fotografia foi realçada pelos pesquisadores para tornar o pigmento legível."
+      },
+      "answer": "Cena narrativa de Leang Karampuang",
+      "choices": [
+        "Cena narrativa de Leang Karampuang",
+        "Caçada de Leang Bulu’ Sipong 4",
+        "Porco de Leang Tedongnge",
+        "Javali de Bhimbetka"
+      ],
+      "date": "pelo menos 51.200 anos atrás",
+      "place": "Caverna Leang Karampuang, Sulawesi do Sul",
+      "country": "Indonésia",
+      "explanation": "O painel combina um porco com pelo menos três figuras semelhantes a humanos. A calcita sobre uma delas indicou idade mínima de 51.200 anos, tornando a composição um dos testemunhos mais antigos de narrativa visual preservada.",
+      "sourceUrl": "https://www.nature.com/articles/s41586-024-07541-7",
+      "sourceLabel": "Nature (2024)"
+    },
+    {
+      "id": "asia-bhimbetka",
+      "continent": "Ásia",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock%20Shelter%2015%2C%20Bhimbetka%2002.jpg?width=1600",
+        "altAfterAnswer": "Grande animal com chifres pintado em vermelho sobre a parede de um abrigo rochoso.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Rock_Shelter_15,_Bhimbetka_02.jpg",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Javali de Bhimbetka",
+      "choices": [
+        "Javali de Bhimbetka",
+        "Porco de Leang Tedongnge",
+        "Bisão de Altamira",
+        "Rinoceronte de Chauvet"
+      ],
+      "date": "Mesolítico, c. 10.000–5.000 a.C. (estimativa)",
+      "place": "Abrigo 15, Bhimbetka, Madhya Pradesh",
+      "country": "Índia",
+      "explanation": "O grande animal integra um conjunto pintado ao longo de muitos milênios. A data desta figura é estilística e aproximada: Bhimbetka preserva camadas visuais que vão do Mesolítico a períodos históricos.",
+      "sourceUrl": "https://whc.unesco.org/en/list/925/",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "asia-ain-sakhri",
+      "continent": "Ásia",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ain%20Sakhri%20lovers%20figurine.jpg?width=1600",
+        "altAfterAnswer": "Pequena escultura de calcita com duas figuras humanas abraçadas, vista de frente.",
+        "credit": "Wikimedia Commons / British Museum",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Ain_Sakhri_lovers_figurine.jpg",
+        "license": "Licença indicada na página do arquivo"
+      },
+      "answer": "Amantes de Ain Sakhri",
+      "choices": [
+        "Amantes de Ain Sakhri",
+        "Pensador de Cernavodă",
+        "Casal de Gumelnița",
+        "Ídolo de Shigir"
+      ],
+      "date": "c. 9.000 a.C.",
+      "place": "Ain Sakhri, deserto da Judeia",
+      "country": "Cisjordânia / Territórios Palestinos",
+      "explanation": "Talhada em calcita por pessoas da cultura natufiana, a peça sugere duas figuras em abraço íntimo. Sua forma muda conforme o ângulo, mostrando como volume e gesto foram explorados de modo sofisticado.",
+      "sourceUrl": "https://www.britishmuseum.org/collection/object/H_1958-1007-1",
+      "sourceLabel": "British Museum"
+    },
+    {
+      "id": "asia-jomon",
+      "continent": "Ásia",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/53154/1501226/main-image",
+        "altAfterAnswer": "Vaso de cerâmica de perfil alto com borda exuberante em espirais semelhantes a chamas.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/53154",
+        "license": "Domínio público — Met Open Access"
+      },
+      "answer": "Vaso Jōmon em estilo chama",
+      "choices": [
+        "Vaso Jōmon em estilo chama",
+        "Vaso cordado de Banpo",
+        "Cerâmica Lapita dentada",
+        "Ânfora de Yangshao"
+      ],
+      "date": "c. 3.500–2.500 a.C.",
+      "place": "Japão central",
+      "country": "Japão",
+      "explanation": "As saliências e espirais da borda deram a este tipo o apelido de “cerâmica de chama”. Produzido no Jōmon Médio, o vaso une função, modelagem manual e uma superfície de extraordinária energia visual.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/53154",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "oceania-mendi",
+      "continent": "Oceania",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/314778/667095/main-image",
+        "altAfterAnswer": "Escultura vertical de pedra escura com corpo arredondado e cabeça alongada de animal.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/314778",
+        "license": "Domínio público — Met Open Access"
+      },
+      "answer": "Figura zoomórfica de Mendi",
+      "choices": [
+        "Figura zoomórfica de Mendi",
+        "Pedra de Ambum",
+        "Moai kavakava",
+        "Ave de Mount Hagen"
+      ],
+      "date": "c. 1.500 a.C.–1600 d.C. (datação incerta)",
+      "place": "Região de Mendi, Terras Altas do Sul",
+      "country": "Papua-Nova Guiné",
+      "explanation": "A figura talvez represente uma equidna, mas seu sentido original permanece desconhecido. Como peças semelhantes não vieram de escavações controladas, a faixa de data é ampla; uma amostra associada a um exemplar do grupo chegou a cerca de 1500 a.C.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/314778",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "oceania-pestle-finial",
+      "continent": "Oceania",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/317802/667030/main-image",
+        "altAfterAnswer": "Pequena escultura de pedra em forma de ave estilizada que servia como topo de pilão.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/317802",
+        "license": "Domínio público — Met Open Access"
+      },
+      "answer": "Topo de pilão de Mount Hagen",
+      "choices": [
+        "Topo de pilão de Mount Hagen",
+        "Figura zoomórfica de Mendi",
+        "Pássaro de pedra de Malekula",
+        "Clava-ave das Ilhas Salomão"
+      ],
+      "date": "c. 1.500 a.C.–1600 d.C. (datação incerta)",
+      "place": "Região do rio Komun, Mount Hagen",
+      "country": "Papua-Nova Guiné",
+      "explanation": "Esta ave estilizada rematava um pilão de pedra, possivelmente usado para moer pigmentos ou preparar alimentos cerimoniais. A datação do grupo é incerta porque os objetos foram encontrados fora de contextos arqueológicos seguros.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/317802",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "oceania-lapita",
+      "continent": "Oceania",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/PortVilaLapita.jpg?width=1600",
+        "altAfterAnswer": "Prato de cerâmica clara decorado com faixas geométricas pontilhadas e rostos estilizados.",
+        "credit": "Wikimedia Commons / Vanuatu Cultural Centre",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:PortVilaLapita.jpg",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Prato de cerâmica Lapita",
+      "choices": [
+        "Prato de cerâmica Lapita",
+        "Vaso Jōmon em estilo chama",
+        "Cerâmica incisa de Valdivia",
+        "Tigela da cultura Unangan"
+      ],
+      "date": "c. 1.000 a.C.",
+      "place": "Efate, coleção do Vanuatu Cultural Centre",
+      "country": "Vanuatu",
+      "explanation": "A cerâmica Lapita é reconhecida por desenhos produzidos com carimbos dentados. Seus estilos ajudam a acompanhar as viagens de comunidades navegadoras que se espalharam pela Melanésia e chegaram a Tonga e Samoa.",
+      "sourceUrl": "https://www.metmuseum.org/essays/lapita-pottery-ca-1500-500-b-c",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "oceania-gwion",
+      "continent": "Oceania",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bradshaw%20rock%20paintings.jpg?width=1600",
+        "altAfterAnswer": "Figuras humanas esguias pintadas em vermelho, com adornos e membros em movimento, sobre rocha.",
+        "credit": "TimJN1 / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Bradshaw_rock_paintings.jpg",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Figuras de Gwion Gwion",
+      "choices": [
+        "Figuras de Gwion Gwion",
+        "Espíritos Mimi de Ubirr",
+        "Figuras de Cabeça Redonda de Tassili",
+        "Dançarinos de Serra da Capivara"
+      ],
+      "date": "c. 10.000 a.C. (estimativa média do estilo)",
+      "place": "Kimberley, Austrália Ocidental",
+      "country": "Austrália",
+      "explanation": "As figuras Gwion Gwion apresentam corpos finos, movimento e adornos detalhados. Datações de ninhos de vespas sobre e sob pinturas indicam que muitas imagens desse estilo foram feitas por volta de 12 mil anos atrás.",
+      "sourceUrl": "https://www.news.uwa.edu.au/archive/2020020611840/international/kimberley-gwion-gwion-rock-art-figures-dated-12000-years/",
+      "sourceLabel": "University of Western Australia"
+    },
+    {
+      "id": "oceania-ubirr",
+      "continent": "Oceania",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aboriginal%20rock%20art%20-Ubirr%20Art%20Site%2C%20Kakadu%20National%20Park%2C%20Northern%20Territory%2C%20Australia-9June2012%20%281%29.jpg?width=1600",
+        "altAfterAnswer": "Pintura rupestre de dois peixes com órgãos internos indicados por linhas, no estilo raio X.",
+        "credit": "Luke Durkin / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Aboriginal_rock_art_-Ubirr_Art_Site,_Kakadu_National_Park,_Northern_Territory,_Australia-9June2012_(1).jpg",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Peixes em estilo raio X de Ubirr",
+      "choices": [
+        "Peixes em estilo raio X de Ubirr",
+        "Peixes de Nawarla Gabarnmang",
+        "Barramundi de Laura",
+        "Atum gravado de Murujuga"
+      ],
+      "date": "últimos 1.500 anos (fase de água doce)",
+      "place": "Ubirr, Parque Nacional Kakadu, Território do Norte",
+      "country": "Austrália",
+      "explanation": "No estilo chamado “raio X”, o artista mostra simultaneamente o contorno e estruturas internas do animal. Em Ubirr, a maioria dessas pinturas pertence à fase de água doce, dentro dos últimos 1.500 anos, numa tradição muito mais longa de arte rupestre.",
+      "sourceUrl": "https://kakadu.gov.au/things-do/activities/rock-art/ubirr/",
+      "sourceLabel": "Parks Australia"
+    },
+    {
+      "id": "europe-willendorf",
+      "continent": "Europa",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Venus%20of%20Willendorf%20-%20All%20sides.jpg?width=1600",
+        "altAfterAnswer": "Montagem fotográfica com quatro vistas de uma pequena figura feminina de calcário coberta por ocre vermelho.",
+        "credit": "Bjørn Christian Tørrissen / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Venus_of_Willendorf_-_All_sides.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "answer": "Vênus de Willendorf",
+      "choices": [
+        "Vênus de Willendorf",
+        "Vênus de Lespugue",
+        "Vênus de Dolní Věstonice",
+        "Dama de Brassempouy"
+      ],
+      "date": "c. 27.500 a.C. (cerca de 29.500 anos)",
+      "place": "Willendorf, Baixa Áustria",
+      "country": "Áustria",
+      "explanation": "Esculpida em calcário e originalmente coberta por ocre vermelho, esta figura mede pouco mais de 11 centímetros. O nome “Vênus” é moderno; sua função e o significado das formas corporais continuam em debate.",
+      "sourceUrl": "https://www.nhm-wien.ac.at/en/research/prehistory/research/venus-research",
+      "sourceLabel": "Natural History Museum Vienna"
+    },
+    {
+      "id": "europe-lion-man",
+      "continent": "Europa",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion%20man%20photo.jpg?width=1600",
+        "altAfterAnswer": "Escultura alongada em marfim com corpo humano e cabeça de felino, exposta em museu.",
+        "credit": "JDuckeck / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Lion_man_photo.jpg",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Leão-homem de Hohlenstein-Stadel",
+      "choices": [
+        "Leão-homem de Hohlenstein-Stadel",
+        "Bisonte de Zaraysk",
+        "Ídolo de Shigir",
+        "Figura híbrida de Trois-Frères"
+      ],
+      "date": "c. 38.000 a.C. (cerca de 40.000 anos)",
+      "place": "Caverna Stadel, Hohlenstein, Baden-Württemberg",
+      "country": "Alemanha",
+      "explanation": "Talhada em marfim de mamute, a figura combina corpo humano e cabeça de leão-das-cavernas. Montada a partir de muitos fragmentos, é uma das esculturas figurativas mais antigas conhecidas.",
+      "sourceUrl": "https://www.loewenmensch.de/lion_man.html",
+      "sourceLabel": "Museu de Ulm — projeto Löwenmensch"
+    },
+    {
+      "id": "europe-lascaux",
+      "continent": "Europa",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux%20painting.jpg?width=1600",
+        "altAfterAnswer": "Pintura rupestre com grandes bovinos e cavalos em preto, ocre e vermelho sobre calcário claro.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg",
+        "license": "Domínio público"
+      },
+      "answer": "Salão dos Touros de Lascaux",
+      "choices": [
+        "Salão dos Touros de Lascaux",
+        "Teto dos Policromos de Altamira",
+        "Galeria dos Leões de Chauvet",
+        "Friso dos Cavalos de Pech Merle"
+      ],
+      "date": "c. 19.500–19.000 a.C.",
+      "place": "Caverna de Lascaux, Montignac, Dordonha",
+      "country": "França",
+      "explanation": "O Salão dos Touros reúne grandes auroques, cavalos e cervos dispostos ao longo das paredes. Pesquisas recentes situam a principal ocupação artística de Lascaux em torno de 21.500–21.000 anos antes do presente.",
+      "sourceUrl": "https://archeologie.culture.gouv.fr/lascaux/en/dating-figures-lascaux",
+      "sourceLabel": "Ministério da Cultura da França"
+    },
+    {
+      "id": "europe-altamira",
+      "continent": "Europa",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/9%20Bisonte%20Magdaleniense%20pol%C3%ADcromo.jpg?width=1600",
+        "altAfterAnswer": "Bisonte policromado em vermelho, preto e ocre, ajustado ao relevo natural do teto rochoso.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:9_Bisonte_Magdaleniense_pol%C3%ADcromo.jpg",
+        "license": "Licença indicada na página do arquivo"
+      },
+      "answer": "Bisonte policromado de Altamira",
+      "choices": [
+        "Bisonte policromado de Altamira",
+        "Touro negro de Lascaux",
+        "Bisão de Niaux",
+        "Bisonte esculpido de La Madeleine"
+      ],
+      "date": "c. 17.300–13.300 a.C. (fase magdaleniana)",
+      "place": "Caverna de Altamira, Cantábria",
+      "country": "Espanha",
+      "explanation": "O artista aproveitou saliências do teto para dar volume ao corpo do bisonte e combinou carvão e ocres. Altamira tornou-se decisiva para o reconhecimento científico da arte paleolítica no fim do século XIX.",
+      "sourceUrl": "https://www.cultura.gob.es/mnaltamira/cueva-altamira/arte.html",
+      "sourceLabel": "Museo Nacional y Centro de Investigación de Altamira"
+    },
+    {
+      "id": "europe-stonehenge",
+      "continent": "Europa",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%2C%20Wiltshire.jpg?width=1600",
+        "altAfterAnswer": "Círculo monumental de grandes pedras verticais ligadas por lintéis horizontais em paisagem gramada.",
+        "credit": "Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Wiltshire.jpg",
+        "license": "Licença livre indicada na página do arquivo"
+      },
+      "answer": "Stonehenge",
+      "choices": [
+        "Stonehenge",
+        "Círculo de Brodgar",
+        "Avebury",
+        "Carnac"
+      ],
+      "date": "c. 2.500 a.C. (arranjo principal de pedras)",
+      "place": "Planície de Salisbury, Wiltshire, Inglaterra",
+      "country": "Reino Unido",
+      "explanation": "Stonehenge foi construído em etapas. Por volta de 2500 a.C., enormes pedras sarsen e blocos menores de bluestone formaram o arranjo central, alinhado com posições sazonais do Sol.",
+      "sourceUrl": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/building-stonehenge/",
+      "sourceLabel": "English Heritage"
+    }
+  ]
+}

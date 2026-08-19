@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#4b281d" />
+    <meta
+      name="description"
+      content="Quiz visual e educativo sobre 25 obras de arte pré-histórica da África, América, Ásia, Oceania e Europa."
+    />
+    <title>Quiz — Arte Pré-Histórica</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <div class="site-shell">
+      <header class="site-header" aria-label="Cabeçalho do quiz">
+        <button class="brand" id="home-button" type="button" aria-label="Voltar ao início">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" role="img">
+              <path d="M20 4c7 0 13 5 13 12 0 5-4 9-9 10-1 4-2 7-4 10-2-3-3-6-4-10-5-1-9-5-9-10C7 9 13 4 20 4Z" />
+              <path d="M14 17c2-3 4-5 6-5 3 0 5 2 7 5M16 22c3 2 5 2 8 0" />
+            </svg>
+          </span>
+          <span>
+            <span class="brand-kicker">Atlas visual</span>
+            <span class="brand-name">Antes da escrita</span>
+          </span>
+        </button>
+
+        <button class="icon-button" id="restart-button" type="button" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4v6h6M5.6 15.5A7 7 0 1 0 6 7.7L4 10" />
+          </svg>
+          <span>Reiniciar</span>
+        </button>
+      </header>
+
+      <main id="conteudo" tabindex="-1">
+        <section class="start-screen" id="start-screen" aria-labelledby="start-title">
+          <div class="hero-ornament" aria-hidden="true">
+            <span></span><i></i><span></span>
+          </div>
+          <p class="eyebrow">Um percurso por cinco continentes</p>
+          <h1 id="start-title">Você reconhece a arte<br /><em>antes da História?</em></h1>
+          <p class="hero-copy">
+            Observe cada imagem real, escolha entre quatro obras e descubra o que ela revela sobre as primeiras culturas visuais humanas.
+          </p>
+
+          <div class="continent-list" aria-label="Continentes incluídos">
+            <span>África</span>
+            <span>América</span>
+            <span>Ásia</span>
+            <span>Oceania</span>
+            <span>Europa</span>
+          </div>
+
+          <dl class="hero-stats" aria-label="Resumo do quiz">
+            <div><dt id="question-total">25</dt><dd>obras</dd></div>
+            <div><dt>5</dt><dd>continentes</dd></div>
+            <div><dt>0</dt><dd>repetições</dd></div>
+          </dl>
+
+          <div class="start-actions">
+            <button class="primary-button" id="start-button" type="button" disabled>
+              <span>Preparando o acervo…</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+            </button>
+            <button class="text-button" id="new-session-button" type="button" hidden>Começar uma nova ordem</button>
+          </div>
+
+          <p class="privacy-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z" /></svg>
+            Seu progresso fica somente neste navegador.
+          </p>
+        </section>
+
+        <section class="quiz-screen" id="quiz-screen" aria-labelledby="question-title" hidden>
+          <div class="progress-panel">
+            <div class="progress-copy">
+              <p id="progress-label">Obra 1 de 25</p>
+              <p><span id="score-label">0</span> acertos</p>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="25" aria-valuenow="1">
+              <span id="progress-fill"></span>
+            </div>
+          </div>
+
+          <article class="question-card" id="question-card">
+            <div class="question-heading">
+              <p class="continent-badge" id="continent-badge">África</p>
+              <p class="unseen-label" id="unseen-label">24 inéditas depois desta</p>
+            </div>
+            <h1 id="question-title">Qual é esta obra?</h1>
+            <p class="question-hint">Toque na imagem para ampliar.</p>
+
+            <figure class="artwork-figure">
+              <button class="image-button" id="image-button" type="button" aria-label="Ampliar imagem da obra">
+                <img
+                  id="artwork-image"
+                  src=""
+                  alt="Imagem da obra a identificar. A descrição será revelada depois da resposta."
+                  loading="eager"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                />
+                <span class="zoom-chip" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m16 16 4 4M11 8v6M8 11h6" /></svg>
+                  ampliar
+                </span>
+              </button>
+              <div class="image-fallback" id="image-fallback" hidden>
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 36V12h32v24H8Zm5-5 7-8 5 6 4-4 6 6M31 18h.01" /></svg>
+                <p>A imagem não carregou neste momento.</p>
+                <a id="fallback-link" href="#" target="_blank" rel="noreferrer">Abrir na fonte</a>
+              </div>
+              <figcaption>
+                <span id="image-note">Imagem real de acervo ou sítio arqueológico</span>
+                <a id="image-credit" href="#" target="_blank" rel="noreferrer">Crédito e licença</a>
+              </figcaption>
+            </figure>
+
+            <div class="options" id="options" role="group" aria-label="Opções de resposta"></div>
+
+            <section class="feedback" id="feedback" aria-labelledby="feedback-title" hidden>
+              <div class="feedback-heading">
+                <span class="feedback-icon" id="feedback-icon" aria-hidden="true"></span>
+                <div>
+                  <p id="feedback-status">Resposta correta</p>
+                  <h2 id="feedback-title" tabindex="-1"></h2>
+                </div>
+              </div>
+              <dl class="fact-list">
+                <div>
+                  <dt>Data</dt>
+                  <dd id="fact-date"></dd>
+                </div>
+                <div>
+                  <dt>Local</dt>
+                  <dd id="fact-place"></dd>
+                </div>
+              </dl>
+              <p class="explanation" id="explanation"></p>
+              <div class="feedback-footer">
+                <a id="source-link" href="#" target="_blank" rel="noreferrer">
+                  Consultar fonte
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v6H5V6h6" /></svg>
+                </a>
+                <button class="primary-button next-button" id="next-button" type="button">
+                  <span>Próxima obra</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+                </button>
+              </div>
+            </section>
+          </article>
+        </section>
+
+        <section class="finish-screen" id="finish-screen" aria-labelledby="finish-title" hidden>
+          <div class="result-seal" aria-hidden="true">
+            <svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" /><path d="m32 50 10 10 22-25" /></svg>
+          </div>
+          <p class="eyebrow">Acervo concluído</p>
+          <h1 id="finish-title">Nenhuma obra inédita ficou para trás.</h1>
+          <p class="result-score"><strong id="final-score">0</strong><span>de <b id="final-total">25</b> acertos</span></p>
+          <p class="result-message" id="result-message"></p>
+
+          <section class="continent-results" aria-labelledby="continent-results-title">
+            <h2 id="continent-results-title">Seu olhar por continente</h2>
+            <div id="continent-results-list"></div>
+          </section>
+
+          <div class="finish-actions">
+            <button class="primary-button" id="play-again-button" type="button">
+              <span>Embaralhar e jogar de novo</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v6h6M5.6 15.5A7 7 0 1 0 6 7.7L4 10" /></svg>
+            </button>
+          </div>
+        </section>
+
+        <section class="error-screen" id="error-screen" aria-labelledby="error-title" hidden>
+          <h1 id="error-title">O acervo não pôde ser aberto.</h1>
+          <p>Confirme se o arquivo <code>questions.json</code> está ao lado desta página e abra o projeto por um servidor local.</p>
+          <button class="primary-button" type="button" onclick="window.location.reload()">Tentar novamente</button>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Pesquisa educativa com datas arqueológicas aproximadas.</p>
+        <a href="FONTES-E-LICENCAS.md" target="_blank">Fontes e licenças</a>
+      </footer>
+    </div>
+
+    <dialog class="image-dialog" id="image-dialog">
+      <div class="dialog-bar">
+        <p id="dialog-caption">Imagem da obra</p>
+        <button id="dialog-close" type="button" aria-label="Fechar imagem ampliada">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+      </div>
+      <div class="dialog-media">
+        <img id="dialog-image" src="" alt="" referrerpolicy="no-referrer" />
+      </div>
+    </dialog>
+
+    <div class="announcement" id="announcement" aria-live="assertive" aria-atomic="true"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+  </body>
+</html>
