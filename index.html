@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#4b281d" />
     <meta
       name="description"
-      content="Quiz visual e educativo sobre 25 obras de arte pré-histórica da África, América, Ásia, Oceania e Europa."
+      content="Quiz visual e educativo com 40 obras e 16 sítios arqueológicos da África, América, Ásia, Oceania e Europa."
     />
     <title>Quiz — Arte Pré-Histórica</title>
     <link rel="stylesheet" href="styles.css" />
@@ -46,7 +46,7 @@
           <p class="eyebrow">Um percurso por cinco continentes</p>
           <h1 id="start-title">Você reconhece a arte<br /><em>antes da História?</em></h1>
           <p class="hero-copy">
-            Observe cada imagem real, escolha entre quatro obras e descubra o que ela revela sobre as primeiras culturas visuais humanas.
+            Observe imagens reais de 40 obras e 16 sítios arqueológicos, escolha entre quatro respostas e descubra o que elas revelam sobre antigas culturas visuais.
           </p>
 
           <div class="continent-list" aria-label="Continentes incluídos">
@@ -58,8 +58,8 @@
           </div>
 
           <dl class="hero-stats" aria-label="Resumo do quiz">
-            <div><dt id="question-total">25</dt><dd>obras</dd></div>
-            <div><dt>5</dt><dd>continentes</dd></div>
+            <div><dt id="question-total">56</dt><dd>itens</dd></div>
+            <div><dt>16</dt><dd>sítios</dd></div>
             <div><dt>0</dt><dd>repetições</dd></div>
           </dl>
 
@@ -80,41 +80,57 @@
         <section class="quiz-screen" id="quiz-screen" aria-labelledby="question-title" hidden>
           <div class="progress-panel">
             <div class="progress-copy">
-              <p id="progress-label">Obra 1 de 25</p>
+              <p id="progress-label">Item 1 de 56</p>
               <p><span id="score-label">0</span> acertos</p>
             </div>
-            <div class="progress-track" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="25" aria-valuenow="1">
+            <div class="progress-track" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="56" aria-valuenow="1">
               <span id="progress-fill"></span>
             </div>
           </div>
 
           <article class="question-card" id="question-card">
             <div class="question-heading">
-              <p class="continent-badge" id="continent-badge">África</p>
-              <p class="unseen-label" id="unseen-label">24 inéditas depois desta</p>
+              <div class="badge-stack">
+                <p class="continent-badge" id="continent-badge">África</p>
+                <p class="type-badge" id="type-badge">Obra</p>
+              </div>
+              <p class="unseen-label" id="unseen-label">55 inéditos depois deste</p>
             </div>
             <h1 id="question-title">Qual é esta obra?</h1>
-            <p class="question-hint">Toque na imagem para ampliar.</p>
+            <p class="question-hint" id="question-hint">Toque na imagem para ampliar.</p>
 
-            <figure class="artwork-figure">
-              <button class="image-button" id="image-button" type="button" aria-label="Ampliar imagem da obra">
-                <img
-                  id="artwork-image"
-                  src=""
-                  alt="Imagem da obra a identificar. A descrição será revelada depois da resposta."
-                  loading="eager"
-                  decoding="async"
-                  referrerpolicy="no-referrer"
-                />
-                <span class="zoom-chip" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m16 16 4 4M11 8v6M8 11h6" /></svg>
-                  ampliar
-                </span>
-              </button>
-              <div class="image-fallback" id="image-fallback" hidden>
-                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 36V12h32v24H8Zm5-5 7-8 5 6 4-4 6 6M31 18h.01" /></svg>
-                <p>A imagem não carregou neste momento.</p>
-                <a id="fallback-link" href="#" target="_blank" rel="noreferrer">Abrir na fonte</a>
+            <figure class="artwork-figure" id="artwork-figure">
+              <div class="carousel-frame" id="carousel-frame">
+                <button class="image-button" id="image-button" type="button" aria-label="Ampliar imagem da obra">
+                  <img
+                    id="artwork-image"
+                    src=""
+                    alt="Imagem da obra a identificar. A descrição será revelada depois da resposta."
+                    loading="eager"
+                    decoding="async"
+                    referrerpolicy="no-referrer"
+                    draggable="false"
+                  />
+                  <span class="zoom-chip" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m16 16 4 4M11 8v6M8 11h6" /></svg>
+                    ampliar
+                  </span>
+                </button>
+                <div class="image-fallback" id="image-fallback" hidden>
+                  <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 36V12h32v24H8Zm5-5 7-8 5 6 4-4 6 6M31 18h.01" /></svg>
+                  <p>A imagem não carregou neste momento.</p>
+                  <a id="fallback-link" href="#" target="_blank" rel="noreferrer">Abrir na fonte</a>
+                </div>
+                <button class="carousel-button carousel-previous" id="carousel-previous" type="button" aria-label="Imagem anterior" hidden>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+                </button>
+                <button class="carousel-button carousel-next" id="carousel-next" type="button" aria-label="Próxima imagem" hidden>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+                </button>
+              </div>
+              <div class="carousel-meta" id="carousel-meta" hidden>
+                <div class="carousel-dots" id="carousel-dots" role="group" aria-label="Escolher imagem do sítio"></div>
+                <p class="carousel-count" id="carousel-count" aria-live="polite">1 de 3</p>
               </div>
               <figcaption>
                 <span id="image-note">Imagem real de acervo ou sítio arqueológico</span>
@@ -149,7 +165,7 @@
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v6H5V6h6" /></svg>
                 </a>
                 <button class="primary-button next-button" id="next-button" type="button">
-                  <span>Próxima obra</span>
+                  <span>Próximo item</span>
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
                 </button>
               </div>
@@ -162,8 +178,8 @@
             <svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" /><path d="m32 50 10 10 22-25" /></svg>
           </div>
           <p class="eyebrow">Acervo concluído</p>
-          <h1 id="finish-title">Nenhuma obra inédita ficou para trás.</h1>
-          <p class="result-score"><strong id="final-score">0</strong><span>de <b id="final-total">25</b> acertos</span></p>
+          <h1 id="finish-title">Nenhum item inédito ficou para trás.</h1>
+          <p class="result-score"><strong id="final-score">0</strong><span>de <b id="final-total">56</b> acertos</span></p>
           <p class="result-message" id="result-message"></p>
 
           <section class="continent-results" aria-labelledby="continent-results-title">
@@ -194,7 +210,7 @@
 
     <dialog class="image-dialog" id="image-dialog">
       <div class="dialog-bar">
-        <p id="dialog-caption">Imagem da obra</p>
+        <p id="dialog-caption">Imagem do item</p>
         <button id="dialog-close" type="button" aria-label="Fechar imagem ampliada">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
         </button>

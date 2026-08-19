@@ -1,5 +1,5 @@
 {
-  "version": "2026.08",
+  "version": "2026.08.2",
   "updatedAt": "2026-08-19",
   "title": "Quiz — Arte Pré-Histórica",
   "questions": [
@@ -629,6 +629,1116 @@
       "explanation": "Stonehenge foi construído em etapas. Por volta de 2500 a.C., enormes pedras sarsen e blocos menores de bluestone formaram o arranjo central, alinhado com posições sazonais do Sol.",
       "sourceUrl": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/building-stonehenge/",
       "sourceLabel": "English Heritage"
+    },
+    {
+      "id": "america-brazil-inga",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pedra do Ingá Inga PB BR.jpg?width=1600",
+        "altAfterAnswer": "Paredão de gnaisse coberto por sulcos e sinais rupestres gravados.",
+        "credit": "Rogerio121402 / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Pedra_do_Ingá_Inga_PB_BR.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "answer": "Itacoatiaras da Pedra do Ingá",
+      "choices": [
+        "Itacoatiaras da Pedra do Ingá",
+        "Painel do Boqueirão da Pedra Furada",
+        "Gravuras da Pedra Pintada",
+        "Pinturas da Lapa do Santo"
+      ],
+      "date": "Período pré-colonial; datação exata debatida",
+      "place": "Ingá, Paraíba",
+      "country": "Brasil",
+      "explanation": "O paredão de gnaisse da Pedra do Ingá reúne sulcos com formas humanas, animais e geométricas. Tombado em 1944, é uma das mais conhecidas itacoatiaras brasileiras; a idade e o significado preciso dos sinais ainda são discutidos.",
+      "sourceUrl": "https://www.gov.br/iphan/pt-br/patrimonio-cultural/patrimonio-arqueologico/bens-arqueologicos-tombados-e-reconhecidos-como-patrimonio-mundial",
+      "sourceLabel": "IPHAN"
+    },
+    {
+      "id": "america-brazil-marajoara-urn",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cultura Marajoara - Urna funerária, c. 400-1350 (MASP Landmann) 03.jpg?width=1600",
+        "altAfterAnswer": "Urna de cerâmica marajoara com pintura geométrica vermelha, preta e branca e modelagem antropomórfica.",
+        "credit": "MASP Landmann / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Cultura_Marajoara_-_Urna_funerária,_c._400-1350_(MASP_Landmann)_03.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "answer": "Urna funerária marajoara",
+      "choices": [
+        "Urna funerária marajoara",
+        "Vaso antropomorfo Santarém",
+        "Urna Maracá",
+        "Vaso policromo Guarita"
+      ],
+      "date": "c. 400–1350 d.C.",
+      "place": "Ilha de Marajó, Pará",
+      "country": "Brasil",
+      "explanation": "Produzida por sociedades da ilha de Marajó, esta urna combina modelagem do corpo e padrões geométricos pintados. Peças assim integravam práticas funerárias e revelam o refinamento técnico da cerâmica amazônica pré-colonial.",
+      "sourceUrl": "https://masp.org.br/acervo",
+      "sourceLabel": "MASP"
+    },
+    {
+      "id": "america-brazil-zoolith-fish",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zoólito em forma de peixe MN 05.jpg?width=1600",
+        "altAfterAnswer": "Escultura de pedra polida em forma de peixe, com pequena cavidade no corpo.",
+        "credit": "Dornicke / Museu Nacional-UFRJ / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Zoólito_em_forma_de_peixe_MN_05.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "answer": "Zoólito de sambaqui em forma de peixe",
+      "choices": [
+        "Zoólito de sambaqui em forma de peixe",
+        "Muiraquitã em forma de rã",
+        "Almofariz felino do rio Trombetas",
+        "Pingente de concha de Cabeçuda"
+      ],
+      "date": "Período pré-colonial; peça sem datação individual publicada",
+      "place": "Rio Grande do Sul",
+      "country": "Brasil",
+      "explanation": "Este artefato de pedra polida foi associado a comunidades construtoras de sambaquis. A pequena depressão ventral pode ter servido ao preparo de substâncias usadas em cerimônias, embora sua função exata não seja conhecida.",
+      "sourceUrl": "https://museunacional.ufrj.br/dir/exposicoes/arqueologia/arqueologia-brasileira/arqbra027.html",
+      "sourceLabel": "Museu Nacional — UFRJ"
+    },
+    {
+      "id": "america-brazil-santarem-vessel",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vaso Antropomorfo de Santarém.jpg?width=1600",
+        "altAfterAnswer": "Pequeno vaso cerimonial de cerâmica que representa uma figura feminina sentada e pintada com motivos geométricos.",
+        "credit": "Toni1871 / Museu Nacional-UFRJ / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Vaso_Antropomorfo_de_Santarém.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "answer": "Vaso antropomorfo Santarém",
+      "choices": [
+        "Vaso antropomorfo Santarém",
+        "Urna funerária marajoara",
+        "Estatueta Valdivia",
+        "Vaso escultórico Chorrera"
+      ],
+      "date": "c. 1000–1400 d.C.",
+      "place": "Baixo rio Tapajós, Pará",
+      "country": "Brasil",
+      "explanation": "O vaso cerimonial representa uma mulher sentada, recoberta por pintura corporal geométrica em preto e vermelho sobre fundo claro. É um exemplo da cerâmica figurativa da cultura Santarém, no baixo Tapajós.",
+      "sourceUrl": "https://www.museunacional.ufrj.br/dir/exposicoes/arqueologia/arqueologia-brasileira/arqbra018.html",
+      "sourceLabel": "Museu Nacional — UFRJ"
+    },
+    {
+      "id": "america-brazil-muiraquita",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cultura Santarém - Muiraquitã MN 01.jpg?width=1600",
+        "altAfterAnswer": "Pequeno pingente de pedra verde polida esculpido em forma de rã.",
+        "credit": "Dornicke / Museu Nacional-UFRJ / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Cultura_Santarém_-_Muiraquitã_MN_01.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "answer": "Muiraquitã em forma de rã",
+      "choices": [
+        "Muiraquitã em forma de rã",
+        "Zoólito de sambaqui em forma de peixe",
+        "Pingente alado Coclé",
+        "Jade dragão-porco Hongshan"
+      ],
+      "date": "c. 1000–1400 d.C. (contexto Santarém)",
+      "place": "Óbidos e região do baixo Amazonas, Pará",
+      "country": "Brasil",
+      "explanation": "Muiraquitãs são pequenos adornos de pedras verdes, muitas vezes esculpidos como rãs. Usados como pendentes e amuletos, circularam por amplas redes de troca; Santarém parece ter sido um importante centro de produção.",
+      "sourceUrl": "https://www.museunacional.ufrj.br/dir/exposicoes/arqueologia/arqueologia-brasileira/arqbra016.html",
+      "sourceLabel": "Museu Nacional — UFRJ"
+    },
+    {
+      "id": "asia-china-hongshan-pig-dragon",
+      "kind": "artwork",
+      "continent": "Ásia",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/British Museum Chinese jade Neolithic period Hongshan culture Coiled dragon Pig-dragon 11022019 1393.jpg?width=1600",
+        "altAfterAnswer": "Pequena escultura circular de jade com cabeça animal e corpo enrolado.",
+        "credit": "Vassil / British Museum / Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:British_Museum_Chinese_jade_Neolithic_period_Hongshan_culture_Coiled_dragon_Pig-dragon_11022019_1393.jpg",
+        "license": "CC0"
+      },
+      "answer": "Dragão-porco de jade Hongshan",
+      "choices": [
+        "Dragão-porco de jade Hongshan",
+        "Cong de jade Liangzhu",
+        "Disco bi Liangzhu",
+        "Cigarra de jade Shang"
+      ],
+      "date": "c. 3500 a.C.",
+      "place": "Província de Liaoning, nordeste da China",
+      "country": "China",
+      "explanation": "O corpo enrolado e a cabeça poderosa deram a essas peças o nome moderno de “dragões-porco”. Talhados em jade pela cultura Hongshan, eram objetos de prestígio provavelmente ligados a práticas rituais e funerárias.",
+      "sourceUrl": "https://www.britishmuseum.org/collection/object/A_1973-0726-140",
+      "sourceLabel": "British Museum"
+    },
+    {
+      "id": "asia-china-liangzhu-cong",
+      "kind": "artwork",
+      "continent": "Ásia",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/as/web-large/DP161556.jpg",
+        "altAfterAnswer": "Grande tubo ritual de jade com exterior quadrangular, furo circular e máscaras abstratas nos cantos.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/72376",
+        "license": "Domínio público"
+      },
+      "answer": "Cong de jade Liangzhu",
+      "choices": [
+        "Cong de jade Liangzhu",
+        "Disco bi Liangzhu",
+        "Dragão-porco de jade Hongshan",
+        "Machado cerimonial Longshan"
+      ],
+      "date": "c. 2400 a.C.",
+      "place": "Baixo vale do Yangtzé",
+      "country": "China",
+      "explanation": "O cong combina um tubo circular com uma forma externa quadrada e máscaras discretas nos cantos. Encontrado em sepultamentos da cultura Liangzhu, provavelmente expressava riqueza, posição social e proteção ritual.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/72376",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "asia-china-majiayao-jar",
+      "kind": "artwork",
+      "continent": "Ásia",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/as/web-large/DP341154.jpg",
+        "altAfterAnswer": "Jarro neolítico de cerâmica clara pintado com faixas geométricas e uma figura zoomórfica escura.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/44722",
+        "license": "Domínio público"
+      },
+      "answer": "Jarro pintado Majiayao, fase Machang",
+      "choices": [
+        "Jarro pintado Majiayao, fase Machang",
+        "Ânfora Yangshao de Banpo",
+        "Vaso tripé Longshan",
+        "Recipiente cerimonial Erlitou"
+      ],
+      "date": "c. 2350–2050 a.C.",
+      "place": "Noroeste da China, bacia superior do rio Amarelo",
+      "country": "China",
+      "explanation": "Este jarro da fase Machang pertence à cultura Majiayao. A composição pintada combina padrões geométricos com uma figura enigmática, às vezes interpretada como animal, traje ritual ou transformação xamânica.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/44722",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "america-mexico-olmec-seated-figure",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/ao/web-large/DP295629.jpg",
+        "altAfterAnswer": "Figura oca de cerâmica sentada, com grande capacete e traços faciais olmecas.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/313327",
+        "license": "Domínio público"
+      },
+      "answer": "Figura olmeca sentada com capacete",
+      "choices": [
+        "Figura olmeca sentada com capacete",
+        "Bebê olmeca",
+        "Guerreiro de Tlatilco",
+        "Estatueta de Jaina"
+      ],
+      "date": "c. 1200–800 a.C.",
+      "place": "Região olmeca do Golfo do México",
+      "country": "México",
+      "explanation": "A figura oca usa um grande capacete e reúne traços associados à tradição olmeca. A postura e os atributos sugerem uma pessoa de posição especial, talvez ligada a cerimônias ou ao jogo de bola.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/313327",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "america-mexico-olmec-face",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/ao/web-large/DP-25390-001.jpg",
+        "altAfterAnswer": "Pequena face olmeca de pedra verde polida, com olhos estreitos, boca curvada e perfurações laterais.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/310279",
+        "license": "Domínio público"
+      },
+      "answer": "Máscara facial olmeca de pedra verde",
+      "choices": [
+        "Máscara facial olmeca de pedra verde",
+        "Máscara de jade maia",
+        "Máscara Teotihuacana",
+        "Máscara Mezcala"
+      ],
+      "date": "c. 900–400 a.C.",
+      "place": "Mesoamérica, provável região do Golfo",
+      "country": "México",
+      "explanation": "A face polida reúne olhos amendoados e boca voltada para baixo, marcas visuais recorrentes na arte olmeca. Perfurações indicam que o pequeno objeto podia ser preso, suspenso ou aplicado a outro suporte.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/310279",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "america-costa-rica-metate",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/ao/web-large/DP-23865-002.jpg",
+        "altAfterAnswer": "Metate cerimonial de pedra vulcânica com tampo retangular e suporte esculpido em forma animal.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/312649",
+        "license": "Domínio público"
+      },
+      "answer": "Metate cerimonial Guanacaste-Nicoya",
+      "choices": [
+        "Metate cerimonial Guanacaste-Nicoya",
+        "Trono zoomorfo olmeca",
+        "Altar de pedra maia",
+        "Mesa ritual Coclé"
+      ],
+      "date": "c. séculos IV–VIII d.C.",
+      "place": "Região de Guanacaste-Nicoya",
+      "country": "Costa Rica",
+      "explanation": "Embora metates comuns servissem para moer alimentos, exemplares elaborados como este tinham função cerimonial e funerária. A pedra vulcânica foi vazada e esculpida para criar uma forma arquitetônica e zoomórfica.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/312649",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "america-panama-cocle-crocodile",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/ao/web-large/DP-26289-001.jpg",
+        "altAfterAnswer": "Pingente de ouro simétrico com dois crocodilos estilizados e detalhes em espiral.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/310266",
+        "license": "Domínio público"
+      },
+      "answer": "Pingente de duplo crocodilo Coclé",
+      "choices": [
+        "Pingente de duplo crocodilo Coclé",
+        "Pingente alado Diquís",
+        "Pectoral de águia Muisca",
+        "Ornamento de jaguar Calima"
+      ],
+      "date": "c. 950–1100 d.C.",
+      "place": "Região de Coclé",
+      "country": "Panamá",
+      "explanation": "Fundido em ouro, o pingente organiza dois crocodilos em uma composição espelhada. Animais transformados e híbridos aparecem com frequência na metalurgia de Coclé, ligada à exibição de prestígio e poder ritual.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/310266",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "america-ecuador-valdivia-figure",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/ao/web-large/DP105134.jpg",
+        "altAfterAnswer": "Pequena figura feminina de cerâmica Valdivia, com penteado alto e corpo simplificado.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/314201",
+        "license": "Domínio público"
+      },
+      "answer": "Figura feminina Valdivia",
+      "choices": [
+        "Figura feminina Valdivia",
+        "Vênus de Willendorf",
+        "Estatueta Chancay",
+        "Figura feminina Jama-Coaque"
+      ],
+      "date": "c. 2200–2000 a.C.",
+      "place": "Costa do Equador",
+      "country": "Equador",
+      "explanation": "As pequenas figuras Valdivia destacam penteados elaborados e corpos modelados de modo sintético. Encontradas em diferentes contextos domésticos e funerários, sua função exata permanece aberta à interpretação.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/314201",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "america-peru-paracas-rattle-bowl",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/ao/web-large/DP-23569-001.jpg",
+        "altAfterAnswer": "Tigela Paracas pintada com figura sobrenatural voadora, cores terrosas e elementos salientes.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/308482",
+        "license": "Domínio público"
+      },
+      "answer": "Tigela-chocalho Paracas com Ser Oculado",
+      "choices": [
+        "Tigela-chocalho Paracas com Ser Oculado",
+        "Vaso retrato Moche",
+        "Tigela felina Chavín",
+        "Prato policromo Nasca"
+      ],
+      "date": "c. 350 a.C.–60 d.C.",
+      "place": "Costa sul do Peru",
+      "country": "Peru",
+      "explanation": "A tigela combina pintura, forma sonora e a imagem de um ser sobrenatural em voo, conhecido como Ser Oculado. A figura conecta esta cerâmica ao universo ritual e visual da tradição Paracas.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/308482",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "america-colombia-calima-pectoral",
+      "kind": "artwork",
+      "continent": "América",
+      "prompt": "Qual é esta obra?",
+      "image": {
+        "url": "https://images.metmuseum.org/CRDImages/ao/web-large/DP160741.jpg",
+        "altAfterAnswer": "Pectoral circular de ouro Calima com grande rosto em relevo, olhos salientes e ornamentos laterais.",
+        "credit": "The Metropolitan Museum of Art",
+        "creditUrl": "https://www.metmuseum.org/art/collection/search/312717",
+        "license": "Domínio público"
+      },
+      "answer": "Pectoral com rosto Calima-Yotoco",
+      "choices": [
+        "Pectoral com rosto Calima-Yotoco",
+        "Máscara funerária Muisca",
+        "Disco dourado Tolima",
+        "Pectoral de duplo crocodilo Coclé"
+      ],
+      "date": "c. séculos I–VII d.C.",
+      "place": "Vale do rio Cauca",
+      "country": "Colômbia",
+      "explanation": "Este pectoral dourado transforma o rosto em uma imagem frontal de grande impacto. Na tradição Calima-Yotoco, adornos de metal precioso comunicavam identidade, autoridade e relações com forças sobrenaturais.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/312717",
+      "sourceLabel": "The Metropolitan Museum of Art"
+    },
+    {
+      "id": "site-africa-tassili",
+      "kind": "site",
+      "continent": "África",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fondazione Passaré V1 068.jpg?width=1600",
+          "altAfterAnswer": "Abrigo de Tassili n’Ajjer com figuras humanas e animais pintadas sobre arenito.",
+          "credit": "Alessandro Passaré / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Fondazione_Passaré_V1_068.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Painel rupestre no planalto de Tassili"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fondazione Passaré V1 080.jpg?width=1600",
+          "altAfterAnswer": "Detalhe de pintura rupestre de Tassili com formas humanas alongadas em pigmento ocre.",
+          "credit": "Alessandro Passaré / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Fondazione_Passaré_V1_080.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Outro painel preservado entre os abrigos de arenito"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hunting scene with dogs. Found in Hill station at Sefar, Tassili-n-Ajjer , Algeria. Dated c. 3,700 BCE. (Méry (9), 1968).jpg?width=1600",
+          "altAfterAnswer": "Registro de uma cena de caça com pessoas, cães e animais em Sefar, Tassili n’Ajjer.",
+          "credit": "Méry / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Hunting_scene_with_dogs._Found_in_Hill_station_at_Sefar,_Tassili-n-Ajjer_,_Algeria._Dated_c._3,700_BCE._(Méry_(9),_1968).jpg",
+          "license": "Domínio público",
+          "note": "Cena de caça documentada em Sefar"
+        }
+      ],
+      "answer": "Tassili n’Ajjer",
+      "choices": [
+        "Tassili n’Ajjer",
+        "Tadrart Acacus",
+        "Tsodilo",
+        "Maciço de Ennedi"
+      ],
+      "date": "c. 10.000 a.C. aos primeiros séculos d.C.",
+      "place": "Planalto do Saara, sudeste da Argélia",
+      "country": "Argélia",
+      "explanation": "Tassili n’Ajjer ocupa um vasto planalto de arenito no sudeste argelino. Mais de 15 mil pinturas e gravuras registram cerca de dez milênios de mudanças ambientais, fauna, pastoreio e vida humana no Saara.",
+      "sourceUrl": "https://whc.unesco.org/en/list/179",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-africa-twyfelfontein",
+      "kind": "site",
+      "continent": "África",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petroglyphes de Twyfelfontein 23.jpg?width=1600",
+          "altAfterAnswer": "Bloco de arenito em Twyfelfontein coberto por gravuras de animais e pegadas.",
+          "credit": "Lidine Mia / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Petroglyphes_de_Twyfelfontein_23.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Gravuras sobre blocos de arenito"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/San rock giraffe, Twyfelfontein (5833480794).jpg?width=1600",
+          "altAfterAnswer": "Petroglifo de girafa gravado em rocha avermelhada em Twyfelfontein.",
+          "credit": "Katie Hunt / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:San_rock_giraffe,_Twyfelfontein_(5833480794).jpg",
+          "license": "CC BY 2.0",
+          "note": "Girafa gravada por comunidades caçadoras-coletoras"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Twyfelfontein Namibia-1.jpg?width=1600",
+          "altAfterAnswer": "Paisagem rochosa seca de Twyfelfontein, com grandes lajes de arenito expostas.",
+          "credit": "Sara & Joachim / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Twyfelfontein_Namibia-1.jpg",
+          "license": "CC BY-SA 2.0",
+          "note": "Paisagem de /Ui-//aes no noroeste da Namíbia"
+        }
+      ],
+      "answer": "Twyfelfontein /Ui-//aes",
+      "choices": [
+        "Twyfelfontein /Ui-//aes",
+        "Tsodilo",
+        "Dabous",
+        "Brandberg"
+      ],
+      "date": "Aproximadamente os últimos 6.000 anos",
+      "place": "Região de Kunene, noroeste da Namíbia",
+      "country": "Namíbia",
+      "explanation": "Twyfelfontein, ou /Ui-//aes, conserva uma das maiores concentrações africanas de petroglifos. Rinocerontes, elefantes, avestruzes, girafas e pegadas registram práticas rituais de caçadores-coletores ao longo de milênios.",
+      "sourceUrl": "https://whc.unesco.org/en/list/1255",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-africa-tsodilo",
+      "kind": "site",
+      "continent": "África",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Animals Rock Art Tsodilo.jpg?width=1600",
+          "altAfterAnswer": "Pinturas vermelhas de animais em uma parede rochosa nas colinas de Tsodilo.",
+          "credit": "Oliver Vass / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Animals_Rock_Art_Tsodilo.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Animais pintados em abrigo de Tsodilo"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giraffe Rock Art Painting Tsodilo.jpg?width=1600",
+          "altAfterAnswer": "Figura de girafa pintada em vermelho sobre uma rocha clara em Tsodilo.",
+          "credit": "Oliver Vass / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Giraffe_Rock_Art_Painting_Tsodilo.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Detalhe de uma girafa pintada"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsodilo banner.jpg?width=1600",
+          "altAfterAnswer": "Vista panorâmica das colinas de quartzito de Tsodilo elevando-se sobre o Kalahari.",
+          "credit": "Oliver Vass / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Tsodilo_banner.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "As colinas de Tsodilo na paisagem do Kalahari"
+        }
+      ],
+      "answer": "Tsodilo",
+      "choices": [
+        "Tsodilo",
+        "Twyfelfontein /Ui-//aes",
+        "Colinas de Matobo",
+        "Kondoa"
+      ],
+      "date": "Ocupações há mais de 100.000 anos; arte até o século XIX",
+      "place": "Deserto do Kalahari, noroeste de Botsuana",
+      "country": "Botsuana",
+      "explanation": "Tsodilo reúne mais de 4.500 pinturas em apenas cerca de 10 km². As colinas conservam uma longa sequência arqueológica e seguem sendo uma paisagem espiritual importante para comunidades locais.",
+      "sourceUrl": "https://whc.unesco.org/en/list/1021",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-america-serra-capivara",
+      "kind": "site",
+      "continent": "América",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pinturas Rupestres - Serra da Capivara II.jpg?width=1600",
+          "altAfterAnswer": "Painel da Serra da Capivara com pequenas figuras humanas vermelhas em movimento.",
+          "credit": "Artur Warchavchik / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Pinturas_Rupestres_-_Serra_da_Capivara_II.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Cena com figuras humanas no parque"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serra da Capivara - Several Paintings 1.jpg?width=1600",
+          "altAfterAnswer": "Conjunto de figuras humanas e animais pintadas em vermelho na Serra da Capivara.",
+          "credit": "Vitor 1234 / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Serra_da_Capivara_-_Several_Paintings_1.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Diversidade de motivos rupestres"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SERRA DA CAPIVARA- PINTURAS RUPESTRES-20200314 090804.jpg?width=1600",
+          "altAfterAnswer": "Grande abrigo rochoso da Serra da Capivara com pinturas sob uma parede de arenito.",
+          "credit": "Roberto Scielzo Leone / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:SERRA_DA_CAPIVARA-_PINTURAS_RUPESTRES-20200314_090804.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Abrigo decorado na paisagem do sudeste do Piauí"
+        }
+      ],
+      "answer": "Parque Nacional da Serra da Capivara",
+      "choices": [
+        "Parque Nacional da Serra da Capivara",
+        "Cueva de las Manos",
+        "Parque Nacional da Serra das Confusões",
+        "Parque Nacional Cavernas do Peruaçu"
+      ],
+      "date": "Arte rupestre com mais de 10.000 anos; algumas atribuições são mais antigas",
+      "place": "Sudeste do Piauí",
+      "country": "Brasil",
+      "explanation": "A Serra da Capivara reúne numerosos abrigos com pinturas e outros vestígios de ocupações humanas antigas. As cenas de caça, dança, animais e vida coletiva formam um dos conjuntos rupestres mais importantes das Américas.",
+      "sourceUrl": "https://whc.unesco.org/en/list/606",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-america-cueva-manos",
+      "kind": "site",
+      "continent": "América",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SantaCruz-CuevaManos-P2210651b.jpg?width=1600",
+          "altAfterAnswer": "Parede da Cueva de las Manos coberta por silhuetas coloridas de mãos feitas com estêncil.",
+          "credit": "Mariano / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:SantaCruz-CuevaManos-P2210651b.jpg",
+          "license": "Domínio público",
+          "note": "Concentração de mãos em negativo"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SantaCruz-CuevaManos-P2210063b.jpg?width=1600",
+          "altAfterAnswer": "Abrigo rochoso da Cueva de las Manos aberto para um cânion patagônico.",
+          "credit": "Marianocecowski / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:SantaCruz-CuevaManos-P2210063b.jpg",
+          "license": "Domínio público",
+          "note": "O abrigo na paisagem do Río Pinturas"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cueva de las Manos Argentina - panoramio (7).jpg?width=1600",
+          "altAfterAnswer": "Vista ampla do painel de mãos e do caminho protegido na Cueva de las Manos.",
+          "credit": "Hiroki Ogawa / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Cueva_de_las_Manos_Argentina_-_panoramio_(7).jpg",
+          "license": "CC BY 3.0",
+          "note": "Painel e passarela de visitação"
+        }
+      ],
+      "answer": "Cueva de las Manos",
+      "choices": [
+        "Cueva de las Manos",
+        "Parque Nacional da Serra da Capivara",
+        "Cueva de Toquepala",
+        "Monte Verde"
+      ],
+      "date": "c. 13.000–9.500 anos atrás para o conjunto mais antigo",
+      "place": "Cânion do Río Pinturas, Santa Cruz, Patagônia",
+      "country": "Argentina",
+      "explanation": "A Cueva de las Manos é famosa pelas centenas de mãos em negativo, mas também guarda guanacos e cenas de caça. Os pigmentos minerais e as sobreposições registram uma longa tradição de caçadores-coletores patagônicos.",
+      "sourceUrl": "https://whc.unesco.org/en/list/936",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-america-caral",
+      "kind": "site",
+      "continent": "América",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caral-Supe (10).jpg?width=1600",
+          "altAfterAnswer": "Vista de uma plataforma monumental restaurada em Caral sobre a planície árida do vale de Supe.",
+          "credit": "Luz Maria Linarez Huacausi / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Caral-Supe_(10).jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Arquitetura monumental no deserto costeiro"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caral-Supe (14).jpg?width=1600",
+          "altAfterAnswer": "Praça circular rebaixada diante de uma construção em plataformas na cidade de Caral.",
+          "credit": "Luz Maria Linarez Huacausi / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Caral-Supe_(14).jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Praça circular rebaixada de função cerimonial"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caral-Supe (25).jpg?width=1600",
+          "altAfterAnswer": "Conjunto de muros de pedra e terra de Caral com montanhas ao fundo.",
+          "credit": "Luz Maria Linarez Huacausi / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Caral-Supe_(25).jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Estruturas urbanas preservadas no vale de Supe"
+        }
+      ],
+      "answer": "Cidade Sagrada de Caral-Supe",
+      "choices": [
+        "Cidade Sagrada de Caral-Supe",
+        "Chavín de Huántar",
+        "Monte Albán",
+        "Tiwanaku"
+      ],
+      "date": "c. 3000–1800 a.C.",
+      "place": "Vale de Supe, costa central",
+      "country": "Peru",
+      "explanation": "Caral-Supe ocupa um terraço desértico sobre o vale do rio Supe. Com plataformas monumentais e praças circulares rebaixadas, é o centro de civilização mais antigo conhecido nas Américas.",
+      "sourceUrl": "https://whc.unesco.org/en/list/1269",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-america-chavin",
+      "kind": "site",
+      "continent": "América",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chavín de Huantar (2).jpg?width=1600",
+          "altAfterAnswer": "Muros de blocos de pedra e pátio do complexo cerimonial de Chavín de Huántar.",
+          "credit": "Mimcollipal / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Chavín_de_Huantar_(2).jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Praças e plataformas de pedra do centro cerimonial"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chavín de Huantar (4).jpg?width=1600",
+          "altAfterAnswer": "Galeria estreita de pedras aparelhadas no interior do templo de Chavín.",
+          "credit": "Mimcollipal / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Chavín_de_Huantar_(4).jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Galerias internas do templo"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama - archeological site of Chavin de Huantar, Ancash, Peru.jpg?width=1600",
+          "altAfterAnswer": "Panorama do sítio de Chavín de Huántar em um vale alto cercado pelos Andes.",
+          "credit": "Inti Runa Viajero / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Panorama_-_archeological_site_of_Chavin_de_Huantar,_Ancash,_Peru.jpg",
+          "license": "CC BY 2.0",
+          "note": "O complexo no alto vale andino de Áncash"
+        }
+      ],
+      "answer": "Chavín de Huántar",
+      "choices": [
+        "Chavín de Huántar",
+        "Cidade Sagrada de Caral-Supe",
+        "Parque Arqueológico de San Agustín",
+        "Kotosh"
+      ],
+      "date": "c. 1500–300 a.C.",
+      "place": "Província de Huari, Áncash, Andes centrais",
+      "country": "Peru",
+      "explanation": "Chavín de Huántar foi um centro cerimonial e de peregrinação em um alto vale andino. Terraços, praças, galerias e imagens zoomórficas ajudaram a difundir um repertório religioso por grande parte dos Andes.",
+      "sourceUrl": "https://whc.unesco.org/en/list/330",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-america-san-agustin",
+      "kind": "site",
+      "continent": "América",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parque Arqueológico de San Agustín-Mesita A 12.jpg?width=1600",
+          "altAfterAnswer": "Esculturas megalíticas guardando uma tumba no setor Mesita A de San Agustín.",
+          "credit": "Bernard Gagnon / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Parque_Arqueológico_de_San_Agustín-Mesita_A_12.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Guardas de pedra diante de uma estrutura funerária"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/San Agustín Archaeological Park statue.jpg?width=1600",
+          "altAfterAnswer": "Estátua frontal de pedra vulcânica com rosto e presas no parque de San Agustín.",
+          "credit": "Sascha Grabow / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:San_Agustín_Archaeological_Park_statue.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Divindade ou ser sobrenatural esculpido em pedra"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The San Agustín Archaeological Park (4925072717).jpg?width=1600",
+          "altAfterAnswer": "Conjunto de estátuas e lajes funerárias entre a vegetação do Parque Arqueológico de San Agustín.",
+          "credit": "Jorge Láscar / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:The_San_Agustín_Archaeological_Park_(4925072717).jpg",
+          "license": "CC BY 2.0",
+          "note": "Monumentos funerários na paisagem do Alto Magdalena"
+        }
+      ],
+      "answer": "Parque Arqueológico de San Agustín",
+      "choices": [
+        "Parque Arqueológico de San Agustín",
+        "Chavín de Huántar",
+        "Tiwanaku",
+        "La Venta"
+      ],
+      "date": "c. séculos I–VIII d.C. para o principal florescimento escultórico",
+      "place": "Alto Magdalena, departamento de Huila",
+      "country": "Colômbia",
+      "explanation": "San Agustín preserva o maior conjunto de esculturas megalíticas e monumentos funerários da América do Sul. Deuses, ancestrais e animais míticos guardavam tumbas em uma paisagem sagrada do norte dos Andes.",
+      "sourceUrl": "https://whc.unesco.org/en/list/744",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-asia-bhimbetka",
+      "kind": "site",
+      "continent": "Ásia",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock Shelter 15, Bhimbetka 02.jpg?width=1600",
+          "altAfterAnswer": "Grande abrigo de arenito de Bhimbetka com pinturas rupestres sob a saliência.",
+          "credit": "Bernard Gagnon / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Rock_Shelter_15,_Bhimbetka_02.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Abrigo natural entre afloramentos de arenito"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock Shelter 3, Bhimbetka 01.jpg?width=1600",
+          "altAfterAnswer": "Figuras humanas e animais em pigmento vermelho numa parede de Bhimbetka.",
+          "credit": "Bernard Gagnon / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Rock_Shelter_3,_Bhimbetka_01.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Pinturas no Abrigo 3"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock Shelter 8, Bhimbetka 03.jpg?width=1600",
+          "altAfterAnswer": "Superposição de cenas pintadas em vermelho e branco no Abrigo 8 de Bhimbetka.",
+          "credit": "Bernard Gagnon / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Rock_Shelter_8,_Bhimbetka_03.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Camadas pictóricas de diferentes períodos"
+        }
+      ],
+      "answer": "Abrigos Rupestres de Bhimbetka",
+      "choices": [
+        "Abrigos Rupestres de Bhimbetka",
+        "Cavernas de Edakkal",
+        "Sítios de arte rupestre de Kondoa",
+        "Caverna de Niah"
+      ],
+      "date": "Do Mesolítico ao período histórico",
+      "place": "Contrafortes dos montes Vindhya, Madhya Pradesh",
+      "country": "Índia",
+      "explanation": "Bhimbetka reúne cinco grupos de abrigos naturais em enormes formações de arenito. Suas pinturas atravessam muitos períodos e mantêm relações visuais com tradições de comunidades que vivem na região.",
+      "sourceUrl": "https://whc.unesco.org/en/list/925",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-asia-zhoukoudian",
+      "kind": "site",
+      "continent": "Ásia",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zhoukoudian 65952-Peking-Man-Site (28097398294).jpg?width=1600",
+          "altAfterAnswer": "Escavação protegida entre paredes calcárias no sítio do Homem de Pequim em Zhoukoudian.",
+          "credit": "xiquinhosilva / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Zhoukoudian_65952-Peking-Man-Site_(28097398294).jpg",
+          "license": "CC BY 2.0",
+          "note": "Área de escavação em uma das localidades fossilíferas"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zhoukoudian 65986-Peking-Man-Site (28682231176).jpg?width=1600",
+          "altAfterAnswer": "Caminho e exposições ao ar livre entre as formações rochosas de Zhoukoudian.",
+          "credit": "xiquinhosilva / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Zhoukoudian_65986-Peking-Man-Site_(28682231176).jpg",
+          "license": "CC BY 2.0",
+          "note": "Percurso arqueológico ao sudoeste de Pequim"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zhoukoudian Peking Man Site.jpg?width=1600",
+          "altAfterAnswer": "Vista da cavidade e das camadas expostas no sítio do Homem de Pequim em Zhoukoudian.",
+          "credit": "Mutt / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Zhoukoudian_Peking_Man_Site.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Depósitos pleistocênicos do sítio"
+        }
+      ],
+      "answer": "Sítio do Homem de Pequim em Zhoukoudian",
+      "choices": [
+        "Sítio do Homem de Pequim em Zhoukoudian",
+        "Sítio do Homem de Lantian",
+        "Sangiran",
+        "Caverna de Niah"
+      ],
+      "date": "c. 700.000–10.000 anos atrás para a principal sequência humana",
+      "place": "Distrito de Fangshan, 42 km a sudoeste de Pequim",
+      "country": "China",
+      "explanation": "Zhoukoudian conserva uma longa sequência de fósseis, ferramentas e evidências de fogo. Os achados do chamado Homem de Pequim tornaram o local central para o estudo de Homo erectus e da evolução humana na Ásia.",
+      "sourceUrl": "https://whc.unesco.org/en/list/449",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-asia-gobekli-tepe",
+      "kind": "site",
+      "continent": "Ásia",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Göbekli Tepe banner.jpg?width=1600",
+          "altAfterAnswer": "Vista panorâmica dos recintos escavados e pilares em T de Göbekli Tepe.",
+          "credit": "Davide Mauro / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Göbekli_Tepe_banner.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Recintos monumentais do Neolítico pré-cerâmico"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Göbekli Tepe 12 November 2022.jpg?width=1600",
+          "altAfterAnswer": "Pilares monolíticos em forma de T organizados em círculo em Göbekli Tepe.",
+          "credit": "TaylanOzgurUksal / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Göbekli_Tepe_12_November_2022.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Pilares em T dentro da área protegida"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The archaeological site of Göbekli Tepe - main excavation area.png?width=1600",
+          "altAfterAnswer": "Fotografia aérea da principal área de escavação de Göbekli Tepe sob uma cobertura protetora.",
+          "credit": "Instituto Arqueológico Alemão, foto E. Kücük / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:The_archaeological_site_of_Göbekli_Tepe_-_main_excavation_area.png",
+          "license": "CC BY 4.0",
+          "note": "Visão aérea da área principal de escavação"
+        }
+      ],
+      "answer": "Göbekli Tepe",
+      "choices": [
+        "Göbekli Tepe",
+        "Çatalhöyük",
+        "Jericó",
+        "Nevali Çori"
+      ],
+      "date": "c. 9600–8200 a.C.",
+      "place": "Montes Germuş, sudeste da Anatólia",
+      "country": "Turquia",
+      "explanation": "Grupos de caçadores-coletores ergueram em Göbekli Tepe recintos monumentais com pilares em T. Muitos pilares trazem animais selvagens em relevo e mostram novas formas de trabalho coletivo no início do Neolítico.",
+      "sourceUrl": "https://whc.unesco.org/en/list/1572",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-asia-catalhoyuk",
+      "kind": "site",
+      "continent": "Ásia",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Çatalhöyük, 7400 BC, Konya, Turkey - UNESCO World Heritage Site, 02.jpg?width=1600",
+          "altAfterAnswer": "Vista das casas escavadas e encostadas umas às outras no monte oriental de Çatalhöyük.",
+          "credit": "Murat Özsoy / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Çatalhöyük,_7400_BC,_Konya,_Turkey_-_UNESCO_World_Heritage_Site,_02.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Casas densamente agrupadas no monte oriental"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Çatalhöyük, 7400 BC, Konya, Turkey - UNESCO World Heritage Site, 06.jpg?width=1600",
+          "altAfterAnswer": "Interior protegido de uma área de escavação com muros de adobe em Çatalhöyük.",
+          "credit": "Murat Özsoy / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Çatalhöyük,_7400_BC,_Konya,_Turkey_-_UNESCO_World_Heritage_Site,_06.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Muros de adobe preservados sob cobertura"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Çatalhöyük, 7400 BC, Konya, Turkey - UNESCO World Heritage Site, 14.jpg?width=1600",
+          "altAfterAnswer": "Detalhe dos compartimentos domésticos de Çatalhöyük vistos de cima.",
+          "credit": "Murat Özsoy / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Çatalhöyük,_7400_BC,_Konya,_Turkey_-_UNESCO_World_Heritage_Site,_14.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Planta compacta dos ambientes domésticos"
+        }
+      ],
+      "answer": "Çatalhöyük",
+      "choices": [
+        "Çatalhöyük",
+        "Göbekli Tepe",
+        "Hacılar",
+        "Jericó"
+      ],
+      "date": "c. 7400–5200 a.C.",
+      "place": "Planície de Konya, Anatólia central",
+      "country": "Turquia",
+      "explanation": "Çatalhöyük foi ocupado por mais de dois milênios. As casas se encostavam sem ruas entre elas e eram acessadas pelos telhados; interiores guardavam pinturas, relevos, esculturas e sepultamentos.",
+      "sourceUrl": "https://whc.unesco.org/en/list/1405",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-oceania-kakadu",
+      "kind": "site",
+      "continent": "Oceania",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kakadu (AU), Kakadu National Park, Anbangbang Rock Shelter -- 2019 -- 4092.jpg?width=1600",
+          "altAfterAnswer": "Painel de arte rupestre no abrigo Anbangbang, no Parque Nacional Kakadu.",
+          "credit": "Dietmar Rabich / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Kakadu_(AU),_Kakadu_National_Park,_Anbangbang_Rock_Shelter_--_2019_--_4092.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Arte rupestre no abrigo Anbangbang"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kakadu (AU), Kakadu National Park, Ubirr Rock Art -- 2019 -- 4169.jpg?width=1600",
+          "altAfterAnswer": "Pinturas em estilo raio X de peixes e outras figuras no sítio Ubirr, em Kakadu.",
+          "credit": "Dietmar Rabich / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Kakadu_(AU),_Kakadu_National_Park,_Ubirr_Rock_Art_--_2019_--_4169.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Painel em Ubirr com figuras de animais"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kakadu (AU), Kakadu National Park, Nadap Lookout -- 2019 -- 4190.jpg?width=1600",
+          "altAfterAnswer": "Vista extensa das planícies alagáveis e escarpas de Kakadu a partir do mirante Nadap.",
+          "credit": "Dietmar Rabich / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Kakadu_(AU),_Kakadu_National_Park,_Nadap_Lookout_--_2019_--_4190.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Paisagem cultural vista do mirante Nadap"
+        }
+      ],
+      "answer": "Parque Nacional Kakadu",
+      "choices": [
+        "Parque Nacional Kakadu",
+        "Paisagem Cultural de Murujuga",
+        "Uluru-Kata Tjuta",
+        "Gariwerd-Grampians"
+      ],
+      "date": "Mais de 50.000 anos de presença aborígene",
+      "place": "Território do Norte",
+      "country": "Austrália",
+      "explanation": "Kakadu é uma paisagem cultural viva, habitada por povos aborígenes há mais de 50 mil anos. Ubirr e Burrungkuy conservam pinturas que registram animais, práticas sociais e cerimônias do Pleistoceno ao presente.",
+      "sourceUrl": "https://whc.unesco.org/en/list/147",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-oceania-murujuga",
+      "kind": "site",
+      "continent": "Oceania",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nganjarli Murujuga Rock Art 01.jpg?width=1600",
+          "altAfterAnswer": "Petroglifos gravados em rochas escuras ao longo da trilha Nganjarli em Murujuga.",
+          "credit": "The editor next door / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Nganjarli_Murujuga_Rock_Art_01.jpg",
+          "license": "CC0",
+          "note": "Gravuras na trilha Nganjarli"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nganjarli Murujuga Rock Art 02.jpg?width=1600",
+          "altAfterAnswer": "Figura animal gravada por percussão em uma rocha avermelhada de Murujuga.",
+          "credit": "The editor next door / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Nganjarli_Murujuga_Rock_Art_02.jpg",
+          "license": "CC0",
+          "note": "Motivo animal em uma superfície rochosa"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nganjarli Murujuga Rock Art 03.jpg?width=1600",
+          "altAfterAnswer": "Conjunto de gravuras sobre blocos de pedra na paisagem árida de Murujuga.",
+          "credit": "The editor next door / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Nganjarli_Murujuga_Rock_Art_03.jpg",
+          "license": "CC0",
+          "note": "Petroglifos entre os blocos da Península de Burrup"
+        }
+      ],
+      "answer": "Paisagem Cultural de Murujuga",
+      "choices": [
+        "Paisagem Cultural de Murujuga",
+        "Parque Nacional Kakadu",
+        "Paisagem Cultural de Budj Bim",
+        "Uluru-Kata Tjuta"
+      ],
+      "date": "Mais de 50.000 anos de cuidado e uso contínuos",
+      "place": "Península de Burrup e Arquipélago de Dampier, Austrália Ocidental",
+      "country": "Austrália",
+      "explanation": "Murujuga reúne uma concentração extraordinária de petroglifos e sítios espirituais. A paisagem terrestre e marítima expressa o Lore e a presença contínua dos Ngarda-Ngarli, seus Proprietários Tradicionais e Guardiões.",
+      "sourceUrl": "https://whc.unesco.org/en/list/1709",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-europe-lascaux",
+      "kind": "site",
+      "continent": "Europa",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux entrance.jpg?width=1600",
+          "altAfterAnswer": "Entrada discreta da caverna original de Lascaux em uma encosta arborizada da Dordonha.",
+          "credit": "Ethan Doyle White / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Lascaux_entrance.jpg",
+          "license": "CC BY-SA 3.0",
+          "note": "Entrada da caverna original, fechada ao público"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux, replica 01.JPG?width=1600",
+          "altAfterAnswer": "Reprodução museológica de grandes animais pintados de Lascaux em uma parede clara.",
+          "credit": "HTO / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Lascaux,_replica_01.JPG",
+          "license": "Domínio público",
+          "note": "Réplica documental; a caverna original é protegida"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peinture Grotte de Lascaux.jpg?width=1600",
+          "altAfterAnswer": "Reprodução fotográfica de cavalos e bovinos de Lascaux em pigmentos preto e ocre.",
+          "credit": "Eline13Viki+ / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Peinture_Grotte_de_Lascaux.jpg",
+          "license": "CC0",
+          "note": "Reprodução das pinturas; acesso à original é restrito"
+        }
+      ],
+      "answer": "Caverna de Lascaux",
+      "choices": [
+        "Caverna de Lascaux",
+        "Caverna de Altamira",
+        "Caverna de Chauvet-Pont d’Arc",
+        "Caverna de Niaux"
+      ],
+      "date": "c. 21.500–21.000 anos atrás para a principal fase artística",
+      "place": "Montignac, Dordonha, Nova Aquitânia",
+      "country": "França",
+      "explanation": "Lascaux integra o conjunto paleolítico do vale do Vézère e é célebre por touros, cavalos e cervos de grande qualidade visual. A caverna original foi fechada ao público em 1963; réplicas permitem conhecer as imagens sem ameaçar sua conservação.",
+      "sourceUrl": "https://whc.unesco.org/en/list/85",
+      "sourceLabel": "UNESCO World Heritage Centre"
+    },
+    {
+      "id": "site-europe-stonehenge",
+      "kind": "site",
+      "continent": "Europa",
+      "prompt": "Que sítio arqueológico aparece neste conjunto de imagens?",
+      "images": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge, Condado de Wiltshire, Inglaterra, 2014-08-12, DD 09.JPG?width=1600",
+          "altAfterAnswer": "Vista frontal do círculo de pedras de Stonehenge sob um céu azul em Wiltshire.",
+          "credit": "Diego Delso / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_09.JPG",
+          "license": "CC BY-SA 4.0",
+          "note": "Círculo de sarsens e trilitos na planície de Salisbury"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge, Condado de Wiltshire, Inglaterra, 2014-08-12, DD 12.JPG?width=1600",
+          "altAfterAnswer": "Vista lateral dos grandes trilitos de Stonehenge e seus lintéis encaixados.",
+          "credit": "Diego Delso / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_12.JPG",
+          "license": "CC BY-SA 4.0",
+          "note": "Detalhe dos lintéis e juntas trabalhadas"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge Heel Stone.jpg?width=1600",
+          "altAfterAnswer": "A Pedra do Calcanhar isolada diante do círculo de Stonehenge na paisagem gramada.",
+          "credit": "DeFacto / Wikimedia Commons",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Stonehenge_Heel_Stone.jpg",
+          "license": "CC BY-SA 4.0",
+          "note": "Heel Stone no eixo do monumento"
+        }
+      ],
+      "answer": "Stonehenge",
+      "choices": [
+        "Stonehenge",
+        "Avebury",
+        "Alinhamentos de Carnac",
+        "Círculo de Callanish"
+      ],
+      "date": "c. 3700–1600 a.C.; pedras principais c. 2500 a.C.",
+      "place": "Planície de Salisbury, Wiltshire, Inglaterra",
+      "country": "Reino Unido",
+      "explanation": "Stonehenge faz parte de uma vasta paisagem cerimonial e funerária neolítica e da Idade do Bronze. Seus grandes sarsens, bluestones e lintéis foram organizados com engenharia singular e alinhamentos solares sazonais.",
+      "sourceUrl": "https://whc.unesco.org/en/list/373",
+      "sourceLabel": "UNESCO World Heritage Centre"
     }
   ]
 }

@@ -2,6 +2,7 @@
 
 const STORAGE_KEY = "quiz-arte-pre-historica:v1";
 const GENERIC_IMAGE_ALT = "Imagem da obra a identificar. A descrição será revelada depois da resposta.";
+const GENERIC_SITE_IMAGE_ALT = "Imagem do sítio arqueológico a identificar. A descrição será revelada depois da resposta.";
 const CONTINENT_ORDER = ["África", "América", "Ásia", "Oceania", "Europa"];
 
 const elements = {
@@ -20,13 +21,22 @@ const elements = {
   progressBar: document.querySelector(".progress-track"),
   progressFill: document.querySelector("#progress-fill"),
   continentBadge: document.querySelector("#continent-badge"),
+  typeBadge: document.querySelector("#type-badge"),
   unseenLabel: document.querySelector("#unseen-label"),
   questionTitle: document.querySelector("#question-title"),
+  questionHint: document.querySelector("#question-hint"),
   questionCard: document.querySelector("#question-card"),
+  artworkFigure: document.querySelector("#artwork-figure"),
+  carouselFrame: document.querySelector("#carousel-frame"),
   imageButton: document.querySelector("#image-button"),
   artworkImage: document.querySelector("#artwork-image"),
   imageFallback: document.querySelector("#image-fallback"),
   fallbackLink: document.querySelector("#fallback-link"),
+  carouselPrevious: document.querySelector("#carousel-previous"),
+  carouselNext: document.querySelector("#carousel-next"),
+  carouselMeta: document.querySelector("#carousel-meta"),
+  carouselDots: document.querySelector("#carousel-dots"),
+  carouselCount: document.querySelector("#carousel-count"),
   imageNote: document.querySelector("#image-note"),
   imageCredit: document.querySelector("#image-credit"),
   options: document.querySelector("#options"),
@@ -55,6 +65,11 @@ let dataVersion = "";
 let questions = [];
 let questionsById = new Map();
 let state = null;
+let activeQuestion = null;
+let activeSlide = 0;
+let activeQuestionAnswered = false;
+let swipeState = null;
+let suppressDialogUntil = 0;
 
 document.addEventListener("DOMContentLoaded", init);
 
@@ -92,7 +107,20 @@ function bindEvents() {
   elements.playAgainButton.addEventListener("click", () => startFreshSession(false));
   elements.homeButton.addEventListener("click", renderStart);
   elements.nextButton.addEventListener("click", goToNextQuestion);
-  elements.imageButton.addEventListener("click", openImageDialog);
+  elements.imageButton.addEventListener("click", (event) => {
+    if (Date.now() < suppressDialogUntil) {
+      event.preventDefault();
+      return;
+    }
+    openImageDialog();
+  });
+  elements.carouselPrevious.addEventListener("click", () => moveCarousel(-1, true));
+  elements.carouselNext.addEventListener("click", () => moveCarousel(1, true));
+  elements.carouselFrame.addEventListener("keydown", handleCarouselKeydown);
+  elements.imageButton.addEventListener("pointerdown", beginCarouselSwipe);
+  elements.imageButton.addEventListener("pointermove", updateCarouselSwipe);
+  elements.imageButton.addEventListener("pointerup", finishCarouselSwipe);
+  elements.imageButton.addEventListener("pointercancel", cancelCarouselSwipe);
   elements.dialogClose.addEventListener("click", () => elements.imageDialog.close());
   elements.imageDialog.addEventListener("click", (event) => {
     if (event.target === elements.imageDialog) elements.imageDialog.close();
@@ -100,6 +128,8 @@ function bindEvents() {
 
   elements.artworkImage.addEventListener("load", () => {
     elements.imageButton.classList.remove("is-loading");
+    elements.imageButton.hidden = false;
+    elements.imageFallback.hidden = true;
   });
 
   elements.artworkImage.addEventListener("error", () => {
@@ -135,7 +165,25 @@ function validateQuestionBank(data) {
     if (ids.has(question.id)) throw new Error(`ID duplicado: ${question.id}`);
     ids.add(question.id);
 
-    if (!question.image || typeof question.image.url !== "string" || typeof question.image.altAfterAnswer !== "string") {
+    const kind = question.kind || "artwork";
+    if (!['artwork', 'site'].includes(kind)) throw new Error(`Tipo inválido: ${question.id}`);
+
+    const questionImages = getQuestionImages(question);
+    if (kind === "site" && questionImages.length < 2) {
+      throw new Error(`O sítio ${question.id} precisa de um carrossel com várias imagens.`);
+    }
+
+    if (
+      questionImages.length === 0 ||
+      questionImages.some((image) =>
+        !image ||
+        typeof image.url !== "string" || image.url.trim() === "" ||
+        typeof image.altAfterAnswer !== "string" || image.altAfterAnswer.trim() === "" ||
+        typeof image.credit !== "string" ||
+        typeof image.creditUrl !== "string" ||
+        typeof image.license !== "string"
+      )
+    ) {
       throw new Error(`Imagem inválida: ${question.id}`);
     }
 
@@ -230,7 +278,7 @@ function renderStart() {
   } else if (state.index >= questions.length) {
     buttonLabel.textContent = "Rever meu resultado";
   } else {
-    buttonLabel.textContent = `Continuar — obra ${state.index + 1} de ${questions.length}`;
+    buttonLabel.textContent = `Continuar — item ${state.index + 1} de ${questions.length}`;
   }
 
   showScreen(elements.startScreen);
@@ -247,18 +295,23 @@ function renderQuestion({ focusHeading = false } = {}) {
   const savedAnswer = state.answers[question.id] || null;
   const currentNumber = state.index + 1;
   const remainingAfter = questions.length - currentNumber;
+  const isSite = (question.kind || "artwork") === "site";
 
   elements.restartButton.hidden = false;
-  elements.progressLabel.textContent = `Obra ${currentNumber} de ${questions.length}`;
+  elements.progressLabel.textContent = `Item ${currentNumber} de ${questions.length}`;
   elements.scoreLabel.textContent = String(state.score);
   elements.progressBar.setAttribute("aria-valuemax", String(questions.length));
   elements.progressBar.setAttribute("aria-valuenow", String(currentNumber));
   elements.progressFill.style.width = `${(currentNumber / questions.length) * 100}%`;
   elements.continentBadge.textContent = question.continent;
+  elements.typeBadge.textContent = isSite ? "Sítio arqueológico" : "Obra";
   elements.unseenLabel.textContent = remainingAfter === 0
-    ? "Última obra inédita"
-    : `${remainingAfter} ${remainingAfter === 1 ? "inédita" : "inéditas"} depois desta`;
+    ? "Último item inédito"
+    : `${remainingAfter} ${remainingAfter === 1 ? "inédito" : "inéditos"} depois deste`;
   elements.questionTitle.textContent = question.prompt;
+  elements.questionHint.textContent = isSite
+    ? "Arraste para o lado ou use as setas para explorar as imagens. Toque para ampliar."
+    : "Toque na imagem para ampliar.";
 
   resetQuestionCard();
   loadArtwork(question, Boolean(savedAnswer));
@@ -268,7 +321,7 @@ function renderQuestion({ focusHeading = false } = {}) {
 
   elements.nextButton.querySelector("span").textContent = currentNumber === questions.length
     ? "Ver resultado"
-    : "Próxima obra";
+    : "Próximo item";
 
   showScreen(elements.quizScreen);
   preloadNextImage();
@@ -277,10 +330,18 @@ function renderQuestion({ focusHeading = false } = {}) {
 }
 
 function resetQuestionCard() {
+  activeSlide = 0;
+  swipeState = null;
   elements.questionCard.classList.remove("answer-correct", "answer-wrong");
   elements.feedback.classList.remove("is-error");
   elements.feedback.hidden = true;
   elements.options.replaceChildren();
+  elements.carouselDots.replaceChildren();
+  elements.carouselMeta.hidden = true;
+  elements.carouselPrevious.hidden = true;
+  elements.carouselNext.hidden = true;
+  elements.carouselFrame.classList.remove("is-draggable", "is-dragging");
+  elements.carouselFrame.style.removeProperty("--carousel-drag-x");
   elements.imageFallback.hidden = true;
   elements.imageButton.hidden = false;
   elements.imageButton.classList.add("is-loading");
@@ -289,22 +350,152 @@ function resetQuestionCard() {
 }
 
 function loadArtwork(question, hasBeenAnswered) {
-  const { image } = question;
+  activeQuestion = question;
+  activeQuestionAnswered = hasBeenAnswered;
+  activeSlide = 0;
+  loadCarouselSlide(0);
+}
+
+function loadCarouselSlide(index, moveFocus = false) {
+  if (!activeQuestion) return;
+
+  const images = getQuestionImages(activeQuestion);
+  activeSlide = Math.max(0, Math.min(index, images.length - 1));
+  const image = images[activeSlide];
+  const isSite = (activeQuestion.kind || "artwork") === "site";
+  const genericAlt = isSite ? GENERIC_SITE_IMAGE_ALT : GENERIC_IMAGE_ALT;
+
+  elements.imageFallback.hidden = true;
+  elements.imageButton.hidden = false;
+  elements.imageButton.classList.add("is-loading");
   elements.artworkImage.removeAttribute("src");
   elements.dialogImage.removeAttribute("src");
-  elements.artworkImage.alt = hasBeenAnswered ? image.altAfterAnswer : GENERIC_IMAGE_ALT;
+  elements.artworkImage.alt = activeQuestionAnswered ? image.altAfterAnswer : genericAlt;
   elements.dialogImage.alt = elements.artworkImage.alt;
   elements.imageCredit.href = image.creditUrl;
   elements.imageCredit.textContent = `${image.credit} · ${image.license}`;
   elements.imageCredit.title = `${image.credit} — ${image.license}`;
-  elements.imageNote.textContent = image.note || "Imagem real de acervo ou sítio arqueológico";
+  elements.imageNote.textContent = image.note || (isSite
+    ? `Imagem ${activeSlide + 1} de ${images.length} do sítio arqueológico`
+    : "Imagem real de acervo ou sítio arqueológico");
   elements.fallbackLink.href = image.creditUrl;
-  elements.dialogCaption.textContent = hasBeenAnswered ? question.answer : "Imagem da obra a identificar";
+  elements.imageButton.setAttribute(
+    "aria-label",
+    `Ampliar imagem ${activeSlide + 1} de ${images.length}${isSite ? " do sítio" : " da obra"}`
+  );
+  elements.dialogCaption.textContent = activeQuestionAnswered
+    ? `${activeQuestion.answer} — imagem ${activeSlide + 1} de ${images.length}`
+    : `Imagem ${activeSlide + 1} de ${images.length} do item a identificar`;
+
+  renderCarouselControls(images, moveFocus);
 
   requestAnimationFrame(() => {
     elements.artworkImage.src = image.url;
     elements.dialogImage.src = image.url;
   });
+}
+
+function renderCarouselControls(images, moveFocus) {
+  const hasCarousel = images.length > 1;
+  elements.carouselMeta.hidden = !hasCarousel;
+  elements.carouselPrevious.hidden = !hasCarousel;
+  elements.carouselNext.hidden = !hasCarousel;
+  elements.carouselFrame.classList.toggle("is-draggable", hasCarousel);
+  elements.carouselPrevious.disabled = activeSlide === 0;
+  elements.carouselNext.disabled = activeSlide === images.length - 1;
+  elements.carouselCount.textContent = `${activeSlide + 1} de ${images.length}`;
+
+  elements.carouselDots.replaceChildren();
+  if (!hasCarousel) return;
+
+  const fragment = document.createDocumentFragment();
+  images.forEach((_, index) => {
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "carousel-dot";
+    dot.setAttribute("aria-label", `Ir para imagem ${index + 1} de ${images.length}`);
+    if (index === activeSlide) dot.setAttribute("aria-current", "true");
+    dot.addEventListener("click", () => loadCarouselSlide(index, true));
+    fragment.append(dot);
+  });
+  elements.carouselDots.append(fragment);
+
+  if (moveFocus) {
+    const currentDot = elements.carouselDots.children[activeSlide];
+    if (currentDot) currentDot.focus({ preventScroll: true });
+  }
+}
+
+function moveCarousel(direction, moveFocus = false) {
+  if (!activeQuestion) return;
+  const images = getQuestionImages(activeQuestion);
+  const target = Math.max(0, Math.min(activeSlide + direction, images.length - 1));
+  if (target === activeSlide) return;
+  loadCarouselSlide(target, moveFocus);
+}
+
+function handleCarouselKeydown(event) {
+  if (!activeQuestion || getQuestionImages(activeQuestion).length < 2) return;
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    moveCarousel(-1);
+  } else if (event.key === "ArrowRight") {
+    event.preventDefault();
+    moveCarousel(1);
+  }
+}
+
+function beginCarouselSwipe(event) {
+  if (!activeQuestion || getQuestionImages(activeQuestion).length < 2 || event.button !== 0) return;
+  swipeState = {
+    pointerId: event.pointerId,
+    startX: event.clientX,
+    startY: event.clientY,
+    deltaX: 0,
+    horizontal: false
+  };
+  elements.imageButton.setPointerCapture?.(event.pointerId);
+}
+
+function updateCarouselSwipe(event) {
+  if (!swipeState || swipeState.pointerId !== event.pointerId) return;
+  const deltaX = event.clientX - swipeState.startX;
+  const deltaY = event.clientY - swipeState.startY;
+
+  if (!swipeState.horizontal && Math.abs(deltaX) > 8 && Math.abs(deltaX) > Math.abs(deltaY)) {
+    swipeState.horizontal = true;
+    elements.carouselFrame.classList.add("is-dragging");
+  }
+
+  if (!swipeState.horizontal) return;
+  swipeState.deltaX = deltaX;
+  const resistance =
+    (activeSlide === 0 && deltaX > 0) ||
+    (activeSlide === getQuestionImages(activeQuestion).length - 1 && deltaX < 0)
+      ? 0.32
+      : 1;
+  const limitedDelta = Math.max(-140, Math.min(deltaX * resistance, 140));
+  elements.carouselFrame.style.setProperty("--carousel-drag-x", `${limitedDelta}px`);
+}
+
+function finishCarouselSwipe(event) {
+  if (!swipeState || swipeState.pointerId !== event.pointerId) return;
+  const { deltaX, horizontal } = swipeState;
+  const threshold = Math.min(72, elements.carouselFrame.clientWidth * 0.16);
+  cancelCarouselSwipe(event);
+
+  if (!horizontal) return;
+  suppressDialogUntil = Date.now() + 350;
+  if (Math.abs(deltaX) >= threshold) moveCarousel(deltaX < 0 ? 1 : -1);
+}
+
+function cancelCarouselSwipe(event) {
+  if (swipeState && event?.pointerId === swipeState.pointerId && elements.imageButton.hasPointerCapture?.(event.pointerId)) {
+    elements.imageButton.releasePointerCapture(event.pointerId);
+  }
+  swipeState = null;
+  elements.carouselFrame.classList.remove("is-dragging");
+  elements.carouselFrame.style.removeProperty("--carousel-drag-x");
 }
 
 function renderOptions(question, savedAnswer) {
@@ -352,7 +543,7 @@ function answerQuestion(choice) {
 
   markOptions(question, answer);
   revealFeedback(question, answer, { animate: true, moveFocus: true });
-  announce(correct ? "Resposta correta." : `Resposta incorreta. A obra é ${question.answer}.`);
+  announce(correct ? "Resposta correta." : `Resposta incorreta. A resposta é ${question.answer}.`);
 
   elements.questionCard.classList.add(correct ? "answer-correct" : "answer-wrong");
   if (correct) createParticleBurst();
@@ -391,9 +582,11 @@ function revealFeedback(question, answer, { animate, moveFocus }) {
   elements.explanation.textContent = question.explanation;
   elements.sourceLink.href = question.sourceUrl;
   elements.sourceLink.setAttribute("aria-label", `Consultar fonte: ${question.sourceLabel}`);
-  elements.artworkImage.alt = question.image.altAfterAnswer;
-  elements.dialogImage.alt = question.image.altAfterAnswer;
-  elements.dialogCaption.textContent = question.answer;
+  activeQuestionAnswered = true;
+  const currentImage = getQuestionImages(question)[activeSlide];
+  elements.artworkImage.alt = currentImage.altAfterAnswer;
+  elements.dialogImage.alt = currentImage.altAfterAnswer;
+  elements.dialogCaption.textContent = `${question.answer} — imagem ${activeSlide + 1} de ${getQuestionImages(question).length}`;
 
   if (!animate) elements.feedback.style.animation = "none";
   requestAnimationFrame(() => {
@@ -455,7 +648,7 @@ function renderContinentResults() {
 }
 
 function getResultMessage(ratio) {
-  if (ratio === 1) return "Olhar de arqueólogo: você reconheceu todas as obras e atravessou milênios sem perder uma pista.";
+  if (ratio === 1) return "Olhar de arqueólogo: você reconheceu todas as obras e sítios e atravessou milênios sem perder uma pista.";
   if (ratio >= 0.8) return "Excelente leitura visual. Você percebeu materiais, estilos e gestos de culturas muito distantes entre si.";
   if (ratio >= 0.6) return "Bom percurso. As explicações já formam um mapa sólido para uma segunda visita ao acervo.";
   if (ratio >= 0.4) return "Você abriu boas trilhas. Em uma nova ordem, observe primeiro material, técnica e paisagem antes de escolher.";
@@ -477,13 +670,18 @@ function getCurrentQuestion() {
   return questionsById.get(state.order[state.index]);
 }
 
+function getQuestionImages(question) {
+  if (Array.isArray(question?.images)) return question.images;
+  return question?.image ? [question.image] : [];
+}
+
 function preloadNextImage() {
   const nextId = state.order[state.index + 1];
   const nextQuestion = questionsById.get(nextId);
   if (!nextQuestion) return;
   const image = new Image();
   image.referrerPolicy = "no-referrer";
-  image.src = nextQuestion.image.url;
+  image.src = getQuestionImages(nextQuestion)[0]?.url || "";
 }
 
 function openImageDialog() {
